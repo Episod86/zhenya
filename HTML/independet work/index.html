@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hr>
+    <form action="">
+        <fieldset>
+            <legend>Регистрационная форма пользователя</legend>
+                Имя: <input name="fio">
+                <p>Укажите возраст: 
+                <select name="vozrast">
+                    <option value="0"> </option>
+                    <option value="10-15">10-15 лет</option>
+                    <option value="15-20">15-20 лет</option>
+                    <option value="20-30">20-30 лет</option>
+                    <option value="30-40">30-40 лет</option>
+                    <option value="40">Более 40 лет</option>
+                </select>
+                </p>
+                <p>
+                    Укажите пол: 
+                    мужской <input type="radio" name="pol" value="m"> 
+                    женский <input type="radio" name="pol" value="w"> 
+                </p>
+                <p>Страна проживания: 
+                    <select name="strana">
+                        <option value="By">Беларусь</option>
+                        <option value="Rf">Российская Федерация</option>
+                        <option value="Dr">Другое государство</option>
+                    </select>
+                </p>
+                <p> Владение языками: 
+                    русский <input type="checkbox" name="lang" value="rus">
+                    белорусский <input type="checkbox" name="lang" value="bel"> 
+                    английский <input type="checkbox" name="lang" value="eng">
+                </p>
+
+                <p>Фото профиля: <input type="file" name="photo" multiple accept="image/*,image/jpeg" valua="Обзор"></p>
+                    
+                    
+                <p>Ведите логин: <input maxlength="25"></p>
+
+                <p>Введите пароль: <input type="password"></p>
+
+                <p>Повторите пароль: <input type="password"></p>
+        </fieldset>
+        <p>
+            <!--<button type="reset">Сброс</button>-->
+            <input type="reset" value="Сброс">
+            <!--<button type="submit">Отправить</button>-->
+            <input type="submit">
+        </p>
+    </form>
+      
+</body>
+</html>

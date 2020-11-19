@@ -1,0 +1,17 @@
+nav a{
+        font-size: large;  /* размер */
+        color:IndianRed; /* цвет ткста */ 
+        font-family: sans-serif; /* шрифт */
+        font-weight:bold; /* жирный */
+        text-decoration: none; /* Отменяем подчеркивание у ссылки */
+        }
+
+body {
+        background-color: #FEE3AF; /*Цвет фона*/
+        }
+main h2 {
+        font-family: cursive; /* шрифт */
+        color: #342609;
+        font-size: xx-large;  /* размер */
+        text-align: center
+        }

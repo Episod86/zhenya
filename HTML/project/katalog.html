@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Каталог</title>
+    <link rel="stylesheet" href="style\style_all.css">
+    <style type="text/css">
+        .block1 { 
+            width: 300px; /*ширина*/
+            height: 600px;/*высота*/
+            padding-right: 20px; /*отступ справа ?текста?*/
+            float: left; /*расположение*/
+        }
+        .block2 { 
+            width: 1142px; 
+            height: 600px;/*высота*/
+            padding-left: 20px;/*????*/
+            float: left; /*????*/
+            left: -320px;  /*????*/
+        }
+    </style> 
+</head>
 </head>
 <body>
+    <header>
+        <h1>Название мазазина</h1>
+        <!--вставить фоновый рисунок-->
+        <nav>
+            <a href="index.html">Главная</a> |
+            <a href="katalog.html">Каталог</a> |
+            <a href="kontakt.html">Контакты</a> 
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <h2>Каталог</h2> 
+            <div class="block1">
+                <form>
+                    <fieldset>
+                        <p align="center" >Фильтр</p>
+                        <p> Цена <br>
+                            От <input size="10"></input> До <input size="10"></input>
+                        </p>
+                        <p> Бренд <br>
+                            <input type="checkbox">Cassio</input><br>
+                            <input type="checkbox">Tissot</input><br>
+                            <input type="checkbox">Certina</input>
+                        </p>
+                        <p> Тип часов <br>
+                            <input type="checkbox">Мужские</input><br>
+                            <input type="checkbox">Женские</input>
+                        </p>
+                        <p>
+                            <input type="submit" value="Показать">
+                            <input type="reset" value="Сброс">
+                        </p>    
+                    </fieldset>
+                </form>   
+            </div>
+            <div class="block2">
+            <img src="img/tov1.jpg" alt="Casio MTG-B1000-1A" width="150" vspace="20" hspace="50"> 
+            <!--
+            <img src="img/tov1.jpg" alt="Casio MTG-B1000-1A" width="100" vspace="20" hspace="50">
+             <img src="img/tov1.jpg" alt="Casio MTG-B1000-1A" width="60"> 
+            -->
+            <br>
+            <a href="tovar1.html" title="Casio MTG-B1000-1A">Casio MTG-B1000-1A</a>
+            <!-- 
+            <a href="tovar1.html" title="Casio MTG-B1000-1A">Casio MTG-B1000-1A</a>
+            <a href="tovar1.html" title="Casio MTG-B1000-1A">Casio MTG-B1000-1A</a>
+             -->      
+            </div>
+           
+           
+        
+
+    </main>
+    <hr>
+    <footer>
+        &copy; Все права защищены
+    </footer>
     
 </body>
 </html>
