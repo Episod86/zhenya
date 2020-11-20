@@ -11,7 +11,7 @@ body {
         }
 main h2 {
         font-family: cursive; /* шрифт */
-        color: #342609;
+        color: #342609; /* цвет ткста */ 
         font-size: xx-large;  /* размер */
         text-align: center
         }

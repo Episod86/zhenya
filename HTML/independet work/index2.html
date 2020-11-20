@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Задание 2</title>
 </head>
 <body>
     <h1>Запись на курсы</h1>
     <hr>
     <form>
-        <p>Имя: 
-            <input>
+        <p>
+            <label> Имя: 
+                <input name="fio">
+            </label>
         </p>
         <p>Язык программирования<br>
-            <input type="radio" name="lang" value="1"> C++ <br>
-            <input type="radio" name="lang" value="2"> PHP <br>
-            <input type="radio" name="lang" value="3"> Puthon
+            <input type="radio" name="lang" value="1" checked> C++ <br>
+            <input type="radio" name="lang" value="2" checked> PHP <br>
+            <input type="radio" name="lang" value="3" checked> Puthons
         </p>            
         <p>Дополнитеьная информация:<br>
-            <textarea> </textarea>
+            <textarea rows="3" cols="30" name="text"></textarea>
+            <!--placeholder="Есть опыт программирования на С++"
+            не сработал-->
         </p>
-        <p>Секретное слово <br>
-            <input type="password">
+        <p> 
+            <label>Секретное слово <br>
+                <input type="password" maxlength="20" size="20">   
+            </label>
         </p>
         <p>
             <input type="submit">
-            <input type="reset">
+            <input type="reset" value="Очистить">
         </p>
         
     </form>
