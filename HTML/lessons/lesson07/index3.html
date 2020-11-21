@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>
+                <font size=5 >Параметры автомобиля </font>
+            </legend>
+            <p> 
+                <label> Марка автомобиля:
+                    <input name="marka">
+                </label> 
+            </p>
+            <p> 
+                <label>Объем двигателя, см<sup>3</sup>: 
+                    <input name="volume" placeholder="1900">
+                </label>
+            </p>
+            <p> Область: 
+                <select name="region">
+                    <!--value как лучше обозначать -->
+                    <option value="brest">Брестская</option>
+                    <option value="gomel">Гомельская</option>
+                    <option value="vitebsk">Витебская</option>
+                    <option value="mogilev">Могилевская</option>
+                    <option value="grodno">Гродненская</option>
+                    <option value="minsk">Минская</option>
+                </select>
+            </p>
+            <p>
+                Тип КПП: <br>
+                <input type="radio" name="kpp" value="av" > Автомат<br>
+                <input type="radio" name="kpp" value="mx" > Механика
+            </p>
+            <p> Двигатель: 
+                <input type="checkbox" name="engine" value="el"> Электро
+                <input type="checkbox" name="engine" value="dz"> Дизель
+                <input type="checkbox" name="engine" value="bn"> Бензин
+                <input type="checkbox" name="engine" value="pb"> Пропан-бутан
+                <input type="checkbox" name="engine" value="mt"> Метан
+            </p>
+            <p>Описание:</p>
+            <p>
+                <textarea rows="10" cols="40" name="text"></textarea>
+            </p>
+            <p>
+                <input type="submit">
+                <input type="reset" value="Очистить">
+            </p>
+        </fieldset>
+
+    
+</body>
+</html>

@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Задание 1</title>
 </head>
 <body>
-    
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Регистрационная форма пользователя</legend>
+                <label> Имя: 
+                    <input name="fio" >
+                </label>
+                <p> 
+                    <label> Укажите возраст: 
+                        <select name="vozrast">
+                            <option value="0"> </option>
+                            <option value="10-15">10-15 лет</option>
+                            <option value="15-20">15-20 лет</option>
+                            <option value="20-30">20-30 лет</option>
+                            <option value="30-40">30-40 лет</option>
+                            <option value="40">Более 40 лет</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    Укажите пол: 
+                    мужской <input type="radio" name="pol" value="m"> 
+                    женский <input type="radio" name="pol" value="w"> 
+                </p>
+                <p>Страна проживания: 
+                    <select name="strana">
+                        <option value="By">Беларусь</option>
+                        <option value="Rf">Российская Федерация</option>
+                        <option value="Dr">Другое государство</option>
+                    </select>
+                </p>
+                <p> Владение языками: 
+                    русский <input type="checkbox" name="lang" value="rus">
+                    белорусский <input type="checkbox" name="lang" value="bel"> 
+                    английский <input type="checkbox" name="lang" value="eng">
+                </p>
+                <p>Фото профиля: 
+                    <!--Как обозвать кнопку "Обзор" -->
+                    <input type="file" name="photo" value="Обзор" multiple accept="jpeg,png"> 
+                </p>
+                    
+                    
+                <p>Ведите логин: <input maxlength="25" size="25"></p>
+                    <!--Как проверить, совпадают ли пароли -->
+                <p> 
+                    <label for="pas">Введите пароль:</label>
+                    <input id="pas" type="password" minlength="8" maxlength="20" size="20">
+                </p>
+                <p> 
+                    <label for="pas2">Повторите пароль:</label>
+                    <input id="pas2" type="password" minlength="8" maxlength="20" size="20">
+                </p>
+                
+        </fieldset>
+        <p>
+            <!--<button type="reset">Сброс</button>-->
+            <input type="reset" value="Сброс">
+            <!--<button type="submit">Отправить</button>-->
+            <input type="submit">
+        </p>
+    </form>
+      
 </body>
 </html>
