@@ -3,64 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style\style_all.css">
     <title>Контакты</title>
-    <style>
-        a { 
-         text-decoration: none; /* Отменяем подчеркивание у ссылки */
-        } 
-       </style>
+    
 </head>
-<body bgcolor="#FEE3AF">
-    <button>
-        <a href="index.html">
-            <font size="4" color="IndianRed" face="sans-serif">
-                <b>Главная</b>
-            </font>
-        </a>
-    </button>
-    <button>
-        <a href="katalog.html">
-            <font size="4" color="IndianRed" face="sans-serif">
-                <b>Каталог</b>
-            </font> 
-        </a> 
-    </button> 
-    <button> 
-        <a href="kontakt.html">
-            <font size="4" color="IndianRed" face="sans-serif">
-                <b>Контакты</b>
-            </font>
-        </a> 
-    </button>
-    
+<body>
+    <header>
+        <h1>Название мазазина</h1>
+        <!--вставить фоновый рисунок-->
+        <nav>
+            <a href="index.html">Главная</a> |
+            <a href="katalog.html">Каталог</a> |
+            <a href="kontakt.html">Контакты</a> 
+        </nav>
+    </header>
     <hr>
-    <h3>Оставьте Ваше сообщение и контактные данные и наши специалисты свяжутся с Вами в ближайшее рабочее время для 
-        решения Вашего вопроса
-    </h3>
-    <form>
-        <fieldset>
-            <legend>Напишите нам</legend>
-            <p>  
-                <label>Имя: <input name="fio"></label></br></br>
-                <label>Телефон: <input name="tel"></label> </br></br>
-                <label>Email: <input name="mail"></label> </br></br>
-                <label>Тема: <input name="tema"></label></br></br>
-                <label for="111">Введите текст сообщения</label></br></br>
-                <textarea id="111"></textarea>
-            </p>
-            <p>
-                <input type="submit" value="Отправить">
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>О нас</legend>
+    <main>
+        <h3>Контакты</h3>
+        <table width="700px" >
+            <tr>
+                <td width=15px height="70px">
+                    <img src="img/cont1.png" alt="Телефоны">
+                </td>
+                <td>
+                    +375 29 999-66-66 <br>
+                    +375 29 666-99-99
+                </td>
+                <td width="15px">
+                    <img src="img/cont3.png" alt="Адрес">
+                </td>
+                <td>
+                    г.Орша <br>
+                    пр-т Текстиьщиков, 32
+                </td>           
+            </tr>
+            <tr>
+                <td height="70px">
+                    <img src="img/cont2.png" alt="e-mail">
+                </td>
+                <td>
+                    episod_kufar@mail.ru 
+                </td>
+                <td>
+                    <img src="img/cont4.png" alt="Время работы">
+                </td>
+                <td>
+                    Пн-Вс: с 9:00 до 21:00
+                </td>
+            </tr>         
+        </table>
+        <h3>Оставьте Ваше сообщение и контактные данные и наши специалисты свяжутся с Вами в ближайшее рабочее время для 
+            решения Вашего вопроса
+        </h3>
 
-        </fieldset>
+        <form>
+            <fieldset>
+                <p><label>Имя: <input name="name" size="40"></label> </p>
+                <p><label>Телефон: +375 <input type="tel" name="phone"></label></p>
+                <p><label>E-mail: <input type="email" name="email"></label></p>
+                <p><label>Тема: <input name="tema"></label></p>    
+                <p><textarea rows="5" cols="40" name="text" placeholder="Введите сообщение"></textarea></p> 
+                
+                <p>
+                    <input type="submit" value="Отправить">
+                </p>
+            </fieldset>
+        </form>
+        <!-- Карта-->
+    </main>
 
-
-
-
-    </form>
-    
+    <footer>
+        <hr>
+        &copy; Все права защищены
+    </footer>
 </body>
 </html>
