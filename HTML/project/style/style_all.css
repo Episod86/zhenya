@@ -7,8 +7,15 @@ nav a{
         }
 
 body {
-        background-color: #FEE3AF; /*Цвет фона*/
+        background-color: #FEE3AF; 
         }
+td a{
+        font-size: large;  /* размер */
+        color:IndianRed; /* цвет ткста */ 
+        font-family: sans-serif; /* шрифт */
+        font-weight:bold; /* жирный */
+        text-align:center;
+}        
 main h2 {
         font-family: cursive; /* шрифт */
         color: #342609; /* цвет ткста */ 
