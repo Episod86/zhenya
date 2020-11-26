@@ -2,34 +2,30 @@ body{
      font-family: sans-serif; /* шрифт */
      background-color: #c5c4c2;
      }
-
-nav a{
-        font-size: large;  /* размер */    
-        font-weight:bold; /* жирный */
-        text-decoration: none; /* Отменяем подчеркивание у ссылки */
-        }
-
-
-td a{
-        font-size: large;  /* размер */
-        color:IndianRed; /* цвет ткста */ 
-        font-weight:bold; /* жирный */
-        text-align:center;
-}        
-main h2 {
-        font-family: cursive; /* шрифт */
-        color: #342609; /* цвет ткста */ 
-        font-size: xx-large;  /* размер */
-        text-align: center
-        }
-header {
-        height: 100px; /* Высота блока */
-        border: 2px solid rgb(107, 104, 104); /* Параметры рамки */
-        background: url(img/fon2.jpg) 100% 100% no-repeat; /* Добавляем фон */
-        background-size: cover; /* Масштабируем фон */
-        }
-main {   
-      background: url(img/fon1.jpg) 100% 100% no-repeat; /* Добавляем фон */
+.shapka {
+      height: 100px; /* Высота блока */
+      border: 2px solid rgb(107, 104, 104); /* Параметры рамки */
+      background: url(img/fon.png) 100% 100% no-repeat; /* Добавляем фон */
       background-size: cover; /* Масштабируем фон */
       }
        
+
+
+/*   nav a{
+        font-size: large;     
+        font-weight:bold;
+        text-decoration: none;
+        }
+
+td a{
+        font-size: large;  
+        color:IndianRed; 
+        font-weight:bold; 
+        text-align:center;
+}        
+main h2 {
+        font-family: cursive;
+        color: #342609; 
+        font-size: xx-large;  
+        text-align: center
+        } */
