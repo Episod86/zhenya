@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style\style_all.css">
     <title>Контакты</title>
-    
+    <style>
+        header {
+        
+        height: 100px; /* Высота блока */
+        border: 2px solid #000; /* Параметры рамки */
+        background: url(img/fon2.jpg) 100% 100% no-repeat; /* Добавляем фон */
+        background-size: cover; /* Масштабируем фон */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -52,23 +60,36 @@
                 </td>
             </tr>         
         </table>
-        <h3>Оставьте Ваше сообщение и контактные данные и наши специалисты свяжутся с Вами в ближайшее рабочее время для 
-            решения Вашего вопроса
-        </h3>
+        <table>
+            <tr>
+                <td>
+                    <h3>Оставьте Ваше сообщение и контактные данные и наши специалисты свяжутся с Вами в ближайшее рабочее время для 
+                        решения Вашего вопроса
+                    </h3>
+            
+                    <form>
+                        <fieldset>
+                            <p><label>Имя: <input name="name" size="40"></label> </p>
+                            <p><label>Телефон: +375 <input type="tel" name="phone"></label></p>
+                            <p><label>E-mail: <input type="email" name="email"></label></p>
+                            <p><label>Тема: <input name="tema"></label></p>    
+                            <p><textarea rows="5" cols="40" name="text" placeholder="Введите сообщение"></textarea></p> 
+                            
+                            <p>
+                                <input type="submit" value="Отправить">
+                            </p>
+                        </fieldset>
+                    </form>
+                </td> 
 
-        <form>
-            <fieldset>
-                <p><label>Имя: <input name="name" size="40"></label> </p>
-                <p><label>Телефон: +375 <input type="tel" name="phone"></label></p>
-                <p><label>E-mail: <input type="email" name="email"></label></p>
-                <p><label>Тема: <input name="tema"></label></p>    
-                <p><textarea rows="5" cols="40" name="text" placeholder="Введите сообщение"></textarea></p> 
                 
-                <p>
-                    <input type="submit" value="Отправить">
-                </p>
-            </fieldset>
-        </form>
+                <td>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2316.9077896545696!2d30.405062615434424!3d54.499850095384616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46cfe226d7a5b7fd%3A0xc0267ac9d9b35a1c!2z0L_RgNC-0YHQvy4g0KLQtdC60YHRgtC40LvRjNGJ0LjQutC-0LIgMzIsINCe0YDRiNCwIDIxMTM4Mg!5e0!3m2!1sru!2sby!4v1606236176486!5m2!1sru!2sby" width="600" height="400" frameborder="1" style="border:2;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </td>
+                
+            </tr>
+        </table>
+        
         <!-- Карта-->
     </main>
 
