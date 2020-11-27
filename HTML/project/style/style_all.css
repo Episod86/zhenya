@@ -1,31 +1,58 @@
 body{
-     font-family: sans-serif; /* шрифт */
-     background-color: #c5c4c2;
+     font-family: Arial,sans-serif; /* шрифт */
+     background-color: #e5e4e2;
      }
 .shapka {
-      height: 100px; /* Высота блока */
-      border: 2px solid rgb(107, 104, 104); /* Параметры рамки */
-      background: url(img/fon.png) 100% 100% no-repeat; /* Добавляем фон */
-      background-size: cover; /* Масштабируем фон */
-      }
-       
-
-
-/*   nav a{
-        font-size: large;     
-        font-weight:bold;
-        text-decoration: none;
-        }
-
+     height: 100px; /* Высота блока */
+     border: 2px solid rgb(107, 104, 104); /* Параметры рамки */
+     /* background: url(project/img/fon_s.png) 100% 100% no-repeat; */
+     background-size: cover; /* Масштабируем фон */
+     }
+.nav {
+     margin-top: 5%; /* Отступ сверху */
+     font-size: x-large;     
+     font-weight:bold;
+     }      
+nav a {
+     text-decoration: none; 
+     }
+.kontent {
+     width: 600px; 
+     height: 100px;
+     margin-top: 10%; /* Отступ сверху */
+     float: right;
+     font-size: x-large;
+     }
+a.button {
+     position: relative;
+     display: inline-block;
+     width: 10em;
+     height: 2.5em;
+     line-height: 2.5em;
+     vertical-align: middle;
+     text-align: center;
+     text-decoration: none;
+     text-shadow: 0 -1px 1px #777;
+     color: #fff;
+     outline: none;
+     border: 2px solid #0f052b;
+     border-radius: 5px;
+     box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em rgb(13, 2, 41);
+     background: linear-gradient(#0a0c8f, #5e2fce 48%, #33069c 52%, #2c1366);
+     }
 td a{
-        font-size: large;  
-        color:IndianRed; 
-        font-weight:bold; 
-        text-align:center;
-}        
-main h2 {
-        font-family: cursive;
-        color: #342609; 
-        font-size: xx-large;  
-        text-align: center
-        } */
+     font-size: large;  
+     color: IndianRed; 
+     font-weight: bold; 
+     text-align: center;      
+     }        
+h2 {
+     font-family: cursive;
+     color: #010614; 
+     font-size: xx-large;  
+     text-align: center
+     } 
+.name {
+     font-size: large;   
+     font-weight: bold;
+     }  
