@@ -3,73 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог</title>
-    <link rel="stylesheet" href="style\style_all.css">
-    <style type="text/css">
-        .block1 { 
-            padding-right: 20px; /*отступ справа ?текста?*/
-            float: left; /*расположение*/
+    <title>Главная</title>
+    <link rel="stylesheet" href="style/style_all.css">
+    <style>
+        .shapka {
+            background: url(img/fon_s.png) 100% 100% no-repeat; 
         }
-        .block2 { 
-            padding-left: 20px;/*????*/
-            float: left; /*????*/
-            left: -320px;  /*????*/
-        }
-    </style> 
-</head>
+    </style>
 </head>
 <body>
     <header>
-        <h1>Название мазазина</h1>
-        <!--вставить фоновый рисунок-->
-        <nav>
-            <a href="index.html">Главная</a> |
-            <a href="katalog.html">Каталог</a> |
-            <a href="kontakt.html">Контакты</a> 
-        </nav>
+        <div class="shapka">
+            <div class="nav">
+                <nav>
+                    <a href="index.html">Главная</a> |
+                    <a href="katalog.html">Каталог</a> |
+                    <a href="kontakt.html">Контакты</a> 
+                </nav>
+            </div>
+        </div>
+        <hr>
     </header>
-    <hr>
     <main>
-        <h2>Каталог</h2> 
-            <div class="block1">
-                <form>
-                    <fieldset>
-                        <p align="center" >Фильтр</p>
-                        <p> Цена <br>
-                            От <input size="10"></input> До <input size="10"></input>
-                        </p>
-                        <p> Бренд <br>
-                            <input type="checkbox">Cassio</input><br>
-                            <input type="checkbox">Tissot</input><br>
-                            <input type="checkbox">Certina</input>
-                        </p>
-                        <p> Тип часов <br>
-                            <input type="checkbox">Мужские</input><br>
-                            <input type="checkbox">Женские</input>
-                        </p>
-                        <p>
-                            <input type="submit" value="Показать">
-                            <input type="reset" value="Сброс">
-                        </p>    
-                    </fieldset>
-                </form>   
-            </div>
-            <div class="block2">
-            <img src="img/tov1.jpg" alt="Casio MTG-B1000-1A" width="150" vspace="20" hspace="50"> 
-            <!--
-            <img src="img/tov1.jpg" alt="Casio MTG-B1000-1A" width="100" vspace="20" hspace="50">
-             <img src="img/tov1.jpg" alt="Casio MTG-B1000-1A" width="60"> 
-            -->
-            <br>
-            <a href="tovar1.html" title="Casio MTG-B1000-1A">Casio MTG-B1000-1A</a>
-            <!-- 
-            <a href="tovar1.html" title="Casio MTG-B1000-1A">Casio MTG-B1000-1A</a>
-            <a href="tovar1.html" title="Casio MTG-B1000-1A">Casio MTG-B1000-1A</a>
-             -->      
-            </div>
-           
-           
-        
+        <h2>Каталог</h2>
+        <table>
+            <tr>
+                <td rowspan="2" valign="baseline">
+                    <form>
+                        <fieldset>
+                            <p align="center" >Фильтр</p>
+                            <p> Цена <br>
+                                От <input size="10"></input> До <input size="10"></input>
+                            </p>
+                            <p> Бренд <br>
+                                <input type="checkbox">Cassio</input><br>
+                                <input type="checkbox">Tissot</input><br>
+                                <input type="checkbox">Certina</input>
+                            </p>
+                            <p> Тип часов <br>
+                                <input type="checkbox">Мужские</input><br>
+                                <input type="checkbox">Женские</input>
+                            </p>
+                            <p>
+                                <input type="submit" value="Показать">
+                                <input type="reset" value="Сброс">
+                            </p>    
+                        </fieldset>
+                    </form>
+                </td>
+                <td >
+                    <img src="img/tov1.png" alt="Casio MTG-B1000-1A" width="150" vspace="20" hspace="50">
+                    <br>
+                    <a href="tovar1.html" title="Casio MTG-B1000-1A" >                        
+                        Casio MTG-B1000-1A 
+                    </a>
+                    <br>3190.91 руб.
+               </td>
+               <td><img src="img/tov2.png" alt="Casio MTG-B1000-1A" width="150" vspace="20" hspace="50"></td>
+               <td><img src="img/tov3.png" alt="Casio MTG-B1000-1A" width="150" vspace="20" hspace="50"></td>
+            </tr>
+            
+            <tr>
+                <td><img src="img/tov4.png" alt="Casio MTG-B1000-1A" width="150" vspace="20" hspace="50"></td>
+                <td><img src="img/tov5.png" alt="Casio MTG-B1000-1A" width="150" vspace="20" hspace="50"></td>
+                <td><img src="img/tov6.png" alt="Casio MTG-B1000-1A" width="150" vspace="20" hspace="50"></td>
+             </tr>
+        </table>
+
+
 
     </main>
     
