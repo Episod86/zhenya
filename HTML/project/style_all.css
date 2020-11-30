@@ -1,11 +1,15 @@
 body{
-     font-family: Arial,sans-serif; /* шрифт */
+     font-family: Arial,sans-serif; /* шрифт ????*/
      background-color: #e5e4e2;
-     }
-.shapka {
+     }     
+header {
      height: 100px; /* Высота блока */
      border: 2px solid rgb(107, 104, 104); /* Параметры рамки */
-     /* background: url(project/img/fon_s.png) 100% 100% no-repeat; */
+     background: url(img/fon_s.png) 100% 100% no-repeat;
+     }
+.fon {
+     height: 500px; /* Высота блока */
+     background: url(img/fon.png) 100% 100% no-repeat; /* Добавляем фон */
      background-size: cover; /* Масштабируем фон */
      }
 .nav {
@@ -55,4 +59,15 @@ h2 {
 .name {
      font-size: large;   
      font-weight: bold;
-     }  
+     } 
+.tovar {
+     width: 26%;
+     height: 350px;  
+     float: left;
+     } 
+.filtr {
+     height: 720px; 
+     }
+.katalog {
+     height: 720px; 
+     }

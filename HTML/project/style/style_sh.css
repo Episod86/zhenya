@@ -1,6 +1,0 @@
-.shapka {
-        height: 100px; /* Высота блока */
-        border: 2px solid rgb(107, 104, 104); /* Параметры рамки */
-    background: url(\img\fon_s.png) 100% 100% no-repeat; /* Добавляем фон */
-    background-size: cover; /* Масштабируем фон */
-    }
