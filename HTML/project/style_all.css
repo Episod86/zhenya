@@ -9,12 +9,7 @@ header {
      }
 .fon {
      height: 500px; /* Высота блока */
-<<<<<<< HEAD
      background: url(img/fon3.jpg) 100% 100% no-repeat; /* Добавляем фон */
-     }
-=======
-     background: url(img/fon.png) 100% 100% no-repeat; /* Добавляем фон */
->>>>>>> 7e2c80cfc305accb5113ce869bddd30d81541fb3
      background-size: cover; /* Масштабируем фон */
      }
 .nav {
