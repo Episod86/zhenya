@@ -39,10 +39,10 @@ a.button {
      text-shadow: 0 -1px 1px #777;
      color: #fff;
      outline: none;
-     border: 2px solid #0f052b;
+     border: 2px solid #9379da;
      border-radius: 5px;
-     box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em rgb(13, 2, 41);
-     background: linear-gradient(#0a0c8f, #5e2fce 48%, #33069c 52%, #2c1366);
+     box-shadow: 0 0 0 60px rgba(27, 24, 24, 0) inset, .1em .1em .2em rgb(13, 2, 41);
+     background: linear-gradient(#0b0b1d, #594588 48%, #5f5180 52%, #744bd3);
      }
 td a{
      font-size: large; /* размер шрифта */ 
