@@ -79,6 +79,9 @@ h2 {
      color: rgb(204, 19, 19); 
      font-weight: bold;  /* жирный шрифт */  
      }
+     ul {
+          list-style-image: url(img/mark.png); /* Путь к изображению маркера */
+          }
 
 
 
