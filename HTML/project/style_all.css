@@ -1,6 +1,6 @@
 body{
      font-family: Arial,sans-serif; /* шрифт ????*/
-     background-color: #e5e4e2;
+     background-color: #f8f6f2;
      }     
 header {
      height: 100px; /* Высота блока */
@@ -14,18 +14,18 @@ header {
      }
 .nav {
      margin-top: 5%; /* Отступ сверху */
-     font-size: x-large;     
-     font-weight:bold;
+     font-size: x-large; /* размер шрифта */
+     font-weight:bold; /* жирный шрифт */
      }      
 nav a {
-     text-decoration: none; 
+     text-decoration: none; /*убрать подчеркивание под ссылкой*/
      }
 .kontent {
      width: 600px; 
      height: 100px;
      margin-top: 10%; /* Отступ сверху */
      float: right;
-     font-size: x-large;
+     font-size: x-large;/* размер шрифта */
      }
 a.button {
      position: relative;
@@ -35,39 +35,53 @@ a.button {
      line-height: 2.5em;
      vertical-align: middle;
      text-align: center;
-     text-decoration: none;
+     text-decoration: none; /*убрать подчеркивание под ссылкой*/
      text-shadow: 0 -1px 1px #777;
      color: #fff;
      outline: none;
-     border: 2px solid #0f052b;
+     border: 2px solid #9379da;
      border-radius: 5px;
-     box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em rgb(13, 2, 41);
-     background: linear-gradient(#0a0c8f, #5e2fce 48%, #33069c 52%, #2c1366);
+     box-shadow: 0 0 0 60px rgba(27, 24, 24, 0) inset, .1em .1em .2em rgb(13, 2, 41);
+     background: linear-gradient(#0b0b1d, #594588 48%, #5f5180 52%, #744bd3);
      }
 td a{
-     font-size: large;  
+     font-size: large; /* размер шрифта */ 
      color: IndianRed; 
-     font-weight: bold; 
+     font-weight: bold; /* жирный шрифт */
      text-align: center;      
      }        
 h2 {
      font-family: cursive;
      color: #010614; 
-     font-size: xx-large;  
+     font-size: xx-large;  /* размер шрифта */
      text-align: center
      } 
 .name {
-     font-size: large;   
-     font-weight: bold;
+     font-size: large;  /* размер шрифта */ 
+     font-weight: bold; /* жирный шрифт */
      } 
 .tovar {
      width: 26%;
      height: 350px;  
      float: left;
+     text-align: center;
+     font-size: x-large;  /* размер шрифта */
      } 
-.filtr {
+.filtr,.katalog {
      height: 720px; 
      }
-.katalog {
-     height: 720px; 
+.tov_img {
+     height: 200px;
+     margin-top: 5px;
+     padding: 20px;
      }
+.cena {
+     color: rgb(204, 19, 19); 
+     font-weight: bold;  /* жирный шрифт */  
+     }
+ul {
+     list-style-image: url(img/mark.png); /* Путь к изображению маркера */
+     }
+
+
+
