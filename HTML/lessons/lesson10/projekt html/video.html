@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Фильмы</title>
     <style>
         body{
             background-color: #000000;
@@ -11,10 +11,16 @@
         a,h3 {
             color: #ffffff
         }    
+        a {
+            text-decoration: none;
+        }
+        table {
+            margin: auto;
+        }
     </style>
 </head>
 <body>
-    <table width=1000px align="center">
+    <table width=1000px>
         <tr>
             <td colspan="3">
                 <img src="online-kino_poster.jpg"> 
@@ -23,8 +29,8 @@
         </tr>
         <tr align="center">
             <td colspan="3">
-                <a href="#">Главная</a> |
-                <a href="#">Музыка</a> |
+                <a href="index.html">Главная | </a> 
+                <a href="audio.html">Музыка | </a> 
                 <a href="#">Фильмы</a> 
             </td> 
         </tr>
@@ -32,17 +38,16 @@
             <td width=15%></td>
             <td width=70% align="center">
                 <h3>Кот в сапогах</h3>
-                <video src="kot.mp4" controls width="100%"></audio>
-                    <br>
+                <video src="kot.mp4" controls poster="kot.jpg" width="100%"></video>
+                    
                 <h3>Мушкетеры</h3>
-                <video src="musketeers.mp4" controls width="100%"></audio>
-                    <br>
+                <video src="musketeers.mp4" controls poster="musketeers.jpg" width="100%"></video>
+                    
                 <h3>Трансформеры</h3>
-                <video src="transformers.jpg" controls width="100%"></audio>
+                <video src="transformers.mp4" controls poster="transformers.jpg" width="100%"></video>
             </td>
             <td width=15%></td>
         </tr>
-        <tr></tr>
     </table>
     
 </body>
