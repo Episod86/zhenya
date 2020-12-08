@@ -1,0 +1,26 @@
+/* <meta charset="utf-8"> */
+h1 {
+    text-align: center;
+    font-family: Helvetica;
+    color: #3014b4;
+    font-size: 18pt;
+    text-shadow: 1px 1px 0px #fff, 3px 3px 0px #d3d7dc;
+    }
+ul {
+    margin-left: 50px;
+    font-family: Georgia;
+    font-style: italic;
+    font-size: 12pt;
+    color: #3212af;
+    }
+.class-red {
+    text-align: center;
+    font-family: comic sans ms;
+    color: red;
+    font-size: 16pt;
+    text-shadow: 1px 1px 0px #fff, 3px 3px 0px #d3d7dc;
+    }  
+p {
+    font-family: veranda;
+    font-size: 12pt;
+}
