@@ -1,0 +1,30 @@
+h2 {
+    color: #3857a0; /*цвет текста*/
+    font-family: 'PT Serif', Tahoma, Verdana, sans-serif; /*шрифт*/
+    font-weight: bold; /*насыщенность или толщина шрифта bold-жирный*/
+    font-size: 26px; /*размер шрифта*/
+    text-align: center; /*горизонтальное выравнивание текста по центру*/
+    }
+table {
+    border-collapse: collapse; /*отображается только одна Линия между ячейками */
+    width: 1000px; /*ширина таблицы*/
+    margin: auto; /*величина отступа сразу для всех сторон элемента*/
+    }
+td {
+    border: 1px solid black; /*толщина, стиль и цвет границы*/
+    padding: 10px; /*поля вокруг текста*/
+    }        
+table img {
+    width: 200px; /*ширина картинок в таблице*/
+    }
+p {
+    font-family: Helvetica; /*шрифт */
+    }
+ul {
+    font-weight: bold; /*жирный шрифт*/
+    color: #3857a0; /*цвет текста*/
+    }
+table ul{
+    font-weight: normal; /*нормальное начертание*/
+    color: #000; /*цвет текста*/
+    }        
