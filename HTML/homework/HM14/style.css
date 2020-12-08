@@ -20,11 +20,11 @@ table img {
 p {
     font-family: Helvetica; /*шрифт */
     }
-ul {
+li {
     font-weight: bold; /*жирный шрифт*/
     color: #3857a0; /*цвет текста*/
     }
-table ul{
+table li{
     font-weight: normal; /*нормальное начертание*/
     color: #000; /*цвет текста*/
     }        
