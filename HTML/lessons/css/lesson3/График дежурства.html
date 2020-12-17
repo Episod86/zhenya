@@ -18,9 +18,13 @@
             vertical-align: middle;
             min-width: 20px;
         }
-        td:nth-child(7*n+1)
+        td:nth-child(7n+1), td:nth-child(7n+1) + td {
             background-color: red;
         }
+        tbody tr:first-child td, td:first-child {
+            background-color: white;
+        }
+        
     </style>
 
 
