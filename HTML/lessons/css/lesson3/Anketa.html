@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        h2 {
+            text-align: center;
+        }
+        table {
+            width: 700px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        tr, td {
+            border: 1px solid rgb(17, 17, 17);
+            padding: 7px;
+        }  
+         
         input[type="text"]:hover {
             box-shadow: 0px 0px 10px orange;
         }
@@ -14,19 +26,19 @@
 </head>
 <body>
     <form>
-        <h2 align="center">АНКЕТА</h2>
-        <table align="center" width="700px" border="1" cellspacing="0" border-collapse: collapse>
+        <h2>АНКЕТА</h2>
+        <table>
             <tr>
-                <td width="280">Фамилия</td>
-                <td><input type="text" name="surname" size="40"></td>
+                <td>Фамилия</td>
+                <td><input type="text" name="surname"></td>
             </tr>
             <tr>
                 <td>Имя</td>
-                <td><input type="text" name="name" size="40"></td>
+                <td><input type="text" name="name"></td>
             </tr>
             <tr>
                 <td>Отчество</td>
-                <td><input type="text" name="middle_name" size="40"></td>
+                <td><input type="text" name="middle_name"></td>
             </tr>
 
             <tr>
@@ -51,7 +63,7 @@
             </tr>
             <tr>
                 <td>Адрес места жительства (пребывания)</td>
-                <td><input type="text" name="address"  size="50" maxlength="100"></td>   
+                <td><input type="text" name="address"></td>   
             </tr>
             
             <tr>
