@@ -29,16 +29,28 @@
         <h2>АНКЕТА</h2>
         <table>
             <tr>
-                <td>Фамилия</td>
-                <td><input type="text" name="surname"></td>
+                <td>
+                    <label for="fio">Фамилия</label>
+                </td>
+                <td>
+                    <input id="fio" type="text" name="surname">
+                </td>
             </tr>
             <tr>
-                <td>Имя</td>
-                <td><input type="text" name="name"></td>
+                <td>
+                    <label for="name"> Имя </label>
+                </td>
+                <td>
+                    <input id="name" type="text" name="name">
+                </td>
             </tr>
             <tr>
-                <td>Отчество</td>
-                <td><input type="text" name="middle_name"></td>
+                <td>
+                    <label for="middl"> Отчество </label>
+                </td>
+                <td>
+                    <input id="middl" type="text" name="middle_name">
+                </td>
             </tr>
 
             <tr>
@@ -49,8 +61,12 @@
                 </td>
             </tr>
             <tr>
-                <td>Дата рождения</td>
-                <td><input type="date" name="date_of_birth"></td>     
+                <td>
+                    <label for="dat"> Дата рождения </label>
+                </td>
+                <td>
+                    <input id="dat" type="date" name="date_of_birth">
+                </td>     
             </tr>
             <tr>
                 <td>Владею языками:</td>
@@ -62,13 +78,17 @@
                 </td>   
             </tr>
             <tr>
-                <td>Адрес места жительства (пребывания)</td>
-                <td><input type="text" name="address"></td>   
+                <td>
+                    <label for="adr">Адрес места жительства (пребывания)</label>
+                </td>
+                <td>
+                    <input id="adr" type="text" name="address">
+                </td>   
             </tr>
             
             <tr>
                 <td colspan="2">
-                    <input type="button" value="Отправить данные" >
+                    <button type="submit">Отправить данные</button>
                 </td>   
             </tr>
 

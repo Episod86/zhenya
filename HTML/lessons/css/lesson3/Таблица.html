@@ -19,8 +19,7 @@
         input[type="text"], textarea {
             width: 450px;
         }
-        tr:nth-of-type(2) td input, tr:nth-of-type(3) td input ,
-        tr:nth-of-type(4) td input, input[type="tel"] {
+        input[required] {
             border: 1px solid #ff0000;
             box-shadow: 0px 0px 3px #ff0000;
         }
@@ -46,39 +45,71 @@
             <td colspan="2">Основные данные</td>   
         </tr>
         <tr>
-            <td>Фамилия</td>
-            <td><input type="text" name="surname" ></td>
+            <td>
+                <label for="fio">Фамилия</label>
+            </td>
+            <td>
+                <input id="fio" type="text" name="surname"  required>
+            </td>
         </tr>
         <tr>
-            <td>Имя</td>
-            <td><input type="text" name="name"></td>
+            <td>
+                <label for="name"> Имя </label>
+            </td>
+            <td>
+                <input id="name" type="text" name="name"  required>
+            </td>
         </tr>
         <tr>
-            <td>Отчество</td>
-            <td><input type="text" name="middle_name"></td>
+            <td>
+                <label for="middl"> Отчество </label>
+            </td>
+            <td>
+                <input id="middl" type="text" name="middle_name"  required>
+            </td>
         </tr>
         <tr>
-            <td>Дата рождения</td>
-            <td><input type="date" name="date_of_birth"></td>     
+            <td>
+                <label for="dat"> Дата рождения </label>
+            </td>
+            <td>
+                <input id="dat" type="date" name="date_of_birth">
+            </td>     
         </tr>
         <tr>
-            <td>Комментарий</td>
-            <td> <textarea > </textarea> </td>
+            <td>
+                <label for="kom"> Комментарий </label>
+            </td>
+            <td> 
+                <textarea id="kom"> </textarea> 
+            </td>
         </tr>
         <tr>
             <td colspan="2">Контакты</td>   
         </tr>
         <tr> 
-            <td>Адрес</td>
-            <td><input type="text" name="address"  ></td>   
+            <td>
+                <label for="adr">Адрес</label>
+            </td>
+            <td>
+                <input id="adr" type="text" name="address">
+            </td>    
         </tr>
         <tr>
-            <td>Телефон</td>
-            <td><input type="tel" name="phone"></td>
+            <td>
+                <label for="tel"> Телефон</label>
+            </td>
+            <td>
+                <input id="tel" type="tel" name="phone"  required>
+            </td>
         </tr>
         <tr> 
-            <td>E-mail:</td>
-            <td><input type="email" name="email"></td>   
+            <td>
+                <label for="mail"> E-mail: </label> 
+            </td>
+            <td>
+                <input id="mail" type="email" name="email">
+            </td>   
         </tr>
         <tr> 
             <td>Получать рассылку</td>

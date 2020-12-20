@@ -1,6 +1,6 @@
 input[type^="rad"]:indeterminate + label{
     color: #0000ff;    
 } 
-input:checked +label {
+input:checked + label {
     color: #ff0000;
 }
