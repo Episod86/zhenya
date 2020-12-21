@@ -1,6 +1,6 @@
 body{
      font-family: Arial,sans-serif; /* шрифт ????*/
-     background-color: #f8f6f2;
+     background-color: #f8f8f8;
      }     
 header {
      height: 100px; /* Высота блока */
@@ -14,8 +14,8 @@ header {
      }
 .nav {
      margin-top: 5%; /* Отступ сверху */
-     font-size: x-large; /* размер шрифта */
-     font-weight:bold; /* жирный шрифт */
+     font-size: 24px; /* размер шрифта */
+     font-weight: bold; /* жирный шрифт */
      }      
 nav a {
      text-decoration: none; /*убрать подчеркивание под ссылкой*/
