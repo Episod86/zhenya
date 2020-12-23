@@ -2,13 +2,16 @@ p {
     width: 500px;
     padding: 1em;
     margin: 2em;
-    border: 1px solid grey;
+    border: 1px solid;
+    font-family: gabriola;
+    font-size: 1.2em;
 }
 
 #p_2 {
-    text-shadow: 1px 1px 2px  grey;
-    letter-spacing: 1.3px;
-    white-space: pre;
+    font-style: italic;
 }
 
+#p_3 {
+    font-variant: small-caps;
+}
 
