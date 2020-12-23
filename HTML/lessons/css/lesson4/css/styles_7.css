@@ -1,14 +1,23 @@
-p {
-    width: 500px;
-    padding: 1em;
-    margin: 2em;
+div {
+    width:350px;
+    padding:7px; 
     border: 1px solid grey;
+    font-size: 18px;
 }
 
-#p_2 {
-    text-shadow: 1px 1px 2px  grey;
-    letter-spacing: 1.3px;
-    white-space: pre;
+p:first-of-type {
+    font-weight: bold;
 }
 
+.p {
+    vertical-align: super;
+}
+
+.b {
+    vertical-align: sub;
+}
+
+.p, .b {
+    font-size: 0.7em;
+}
 
