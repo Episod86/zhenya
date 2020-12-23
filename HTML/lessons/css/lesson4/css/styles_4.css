@@ -6,7 +6,10 @@ p {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2em;
 }
-
+#p_1 {
+    font-weight: normal;
+    font-style: normal;
+}
 #p_2 {
     font-style: italic;
 }
