@@ -1,0 +1,95 @@
+h1, h2 {
+    background-color: #ddd;
+}
+
+h1 {
+    padding: 20px;
+    font-size: 28pt;
+}
+
+a {
+    text-decoration: none;
+}
+
+a[href*="/"]::before {
+    content: "\1F517";
+    color: #08c2b2; /*цвет текста*/
+}
+
+a[href^="#"]::before {
+    content: "\1F516";
+}
+
+a[href*="/"]::before, a[href^="#"]::before {
+    font-size: 30px; /*размер текста*/
+    margin: 5px;   /*Внешние отступы*/
+}
+
+a[href^="#"] {
+    font-size: 16pt;
+    color: #777777;
+    margin-left: 20px;
+}
+
+a[href^="#"]:hover {
+    color: #1d0d77;
+}
+
+p:nth-of-type(2)::before {
+    content: "\26A0";
+    font-style: normal;
+    margin: 10px;
+    font-size: 34px;
+}
+
+p:not(:nth-of-type(2))::first-line {
+    font-style: italic;  
+}
+
+a[href^="#"]::before, p:nth-of-type(2)::before {
+    color: #ffa500; /*цвет текста*/
+}
+
+a[href^="#"], p:nth-of-type(2), p:not(:nth-of-type(2))::first-line {
+    font-weight: bold; 
+}
+
+h2 {
+    padding: 10px;
+    color: #2d4764;
+    border: 1px dotted #444;
+}
+
+h2:nth-of-type(2) {
+    color: #345375;
+    border: 1px dashed #444;
+}
+
+h2 {
+    font-size: 20pt;
+}
+h2::after {
+    content: "\1F50D";
+    font-size: 35px; /*размер текста*/
+    margin-left: 15px;    
+}
+
+h2::first-letter {
+    margin-left: 30px; /*Внешние отступы*/
+}
+
+h2::first-letter, p:not(:nth-of-type(2))::first-line {
+    font-size: larger; /* шрифт крупнее чем шрифт родительского  элемента */
+}
+
+h3 {
+    margin-left: 40px;
+}
+
+h3:nth-of-type(even) a {
+    color: #ff4500;
+}
+
+h3:nth-of-type(odd) a {
+    color: #1ead10;
+}

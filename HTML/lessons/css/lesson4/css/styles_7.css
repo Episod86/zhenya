@@ -1,0 +1,23 @@
+div {
+    width:350px;
+    padding:7px; 
+    border: 1px solid grey;
+    font-size: 18px;
+}
+
+p:first-of-type {
+    font-weight: bold;
+}
+
+.p {
+    vertical-align: super;
+}
+
+.b {
+    vertical-align: sub;
+}
+
+.p, .b {
+    font-size: 0.7em;
+}
+
