@@ -1,0 +1,10 @@
+table {
+    border: 1px solid black;
+    caption-side: bottom;
+    border-collapse: separate;
+    border-spacing: 1px;
+    empty-cells: hide;
+}
+td {
+    border: 1px solid black;
+}

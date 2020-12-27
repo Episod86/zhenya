@@ -1,0 +1,38 @@
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    overflow: hidden;
+}
+td,tr {
+    border: 1px solid black;
+    position: relative;
+}
+
+h1 {
+    color: blueviolet;
+}
+
+td:hover::after {
+    content: '' ;
+    background-color:rgba(140, 140,255, 0.4);
+    position: absolute;
+    height: 2000vh;
+    left: 0;
+    top: -1000vh;
+    width: 100%;
+    z-index: -1;
+}
+tr:hover{
+    background-color:rgba(140, 140,255, 0.4);
+}
+/* 
+tr:hover ::after {
+    content: '' ;
+    background-color:rgba(140, 140,255, 0.4);
+    position: absolute;
+    height: 2000vh;
+    left: 0;
+    top: -1000vh;
+    width: 100%;
+    z-index: -1;
+} */
