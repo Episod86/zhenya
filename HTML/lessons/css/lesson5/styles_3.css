@@ -1,21 +1,22 @@
 table {
     empty-cells: hide;
+    text-align: center;
+    width: 600px;
 }
-td,tr,th {
+
+td,th {
     border-radius: 5px;
     width:120px;
     padding:15px;
-    text-align: center;
-}
-thead tr:first-of-type{
-    background: linear-gradient(to top,  #8af004,#6ab623 );
 }
 
-th:first-of-type {
-    background: linear-gradient( 45deg,  #8af004,#6ab623 );
+thead tr:first-of-type, th:first-of-type {
+    background: linear-gradient(to top,  #8af004,#6ab623 );
+    color: white;
 }
+
 td {
-        background-color: skyblue;
+    background-color: #bbe781;
 }
 
 
