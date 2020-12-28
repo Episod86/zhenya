@@ -1,10 +1,13 @@
-table {
+table, td {
     border: 1px solid black;
+    border-collapse: collapse;
+    width: 200px;
+}
+
+table:nth-of-type(2) {
     caption-side: bottom;
     border-collapse: separate;
-    border-spacing: 1px;
+    border-spacing: 4px;
     empty-cells: hide;
 }
-td {
-    border: 1px solid black;
-}
+

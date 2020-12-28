@@ -2,29 +2,14 @@
 table {
     width: 700px;
     margin: auto;
-    border: 1px solid  rgb(46, 5, 85);
     border-collapse: collapse;
     overflow: hidden;
 }
-
-thead tr{
-    background-color:  rgb(120, 19, 214);
-    color: white;
-    font-weight: bold;
-}
-
-th:first-of-type{
-    background-color:  rgb(142, 69, 209);
-    color: white;
-    font-weight: normal;
-    text-align: left;
-}
-
-td,tr,th {
-    border: 1px solid rgb(46, 5, 85);
+td,th {
+    border: 1px solid rgba(1, 1, 49, 0.4);
     position: relative;
     padding-left: 10px
-}
+}    
 
 h1 {
     text-align: center;
@@ -42,6 +27,24 @@ td:hover::after {
     width: 100%;
     z-index: -1;
 }
+
 td:hover::after, tr:hover {
     background-color:rgba(140, 140,255, 0.4);
 }
+
+thead tr{
+    background-color:  rgb(120, 19, 214);
+    font-weight: bold;
+}
+
+th:first-of-type{
+    background-color:  rgb(142, 69, 209);
+    font-weight: normal;
+    text-align: left;
+}
+
+thead tr, th:first-of-type {
+    color: white;
+}
+
+
