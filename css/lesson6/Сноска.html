@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сноска</title>
+    <style>
+        p {
+            padding: 10px;
+            background-color:#c6e9b9;
+            border: 2px solid rgb(57, 201, 57);             
+            width: 400px;
+            font-size: 1.6em;
+            border-radius: 5px;
+            position: relative;
+        }
+
+        p::before {
+            content: ' ';
+            position: absolute; 
+            top: 100%; 
+            left: 5%;        
+            border: 30px solid transparent;
+            border-top: 30px solid #c6e9b9;;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        С другой стороны постоянное информационно-пропагандистское 
+        обеспечение нашей деятельности обеспечивает широкому кругу 
+        (специалистов) участие в формировании позиций, занимаемых 
+        участниками в отношении поставленных задач.
+    </p>
+</body>
+</html>
