@@ -20,6 +20,9 @@ header {
 nav a {
      text-decoration: none; /*убрать подчеркивание под ссылкой*/
      }
+nav a:hover {
+     color: tomato;
+}     
 .kontent {
      width: 600px; 
      height: 100px;
@@ -45,7 +48,7 @@ a.button {
      background: linear-gradient(#0b0b1d, #594588 48%, #5f5180 52%, #744bd3);
      }
 td a{
-     font-size: large; /* размер шрифта */ 
+     font-size: 26px; /* размер шрифта */ 
      color: IndianRed; 
      font-weight: bold; /* жирный шрифт */
      text-align: center;      
@@ -53,11 +56,11 @@ td a{
 h2 {
      font-family: cursive;
      color: #010614; 
-     font-size: xx-large;  /* размер шрифта */
+     font-size: 32px;  /* размер шрифта */
      text-align: center
      } 
 .name {
-     font-size: large;  /* размер шрифта */ 
+     font-size: 26px;  /* размер шрифта */ 
      font-weight: bold; /* жирный шрифт */
      } 
 .tovar {
@@ -82,6 +85,14 @@ h2 {
 ul {
      list-style-image: url(img/mark.png); /* Путь к изображению маркера */
      }
+
+.img_tovar {
+     border: 4px solid violet;
+}
+
+.img_tovar:hover {
+     border: 4px solid  #f8f8f8;
+} 
 
 
 
