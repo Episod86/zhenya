@@ -7,3 +7,25 @@
     height: 70px;
 }
 
+input, textarea {
+    border-radius: 3px; 
+    height: 18px;
+    font-size: 14px; 
+    font-family: Tahoma;
+    display: block;
+}
+
+input::first-letter {
+    text-transform: uppercase;
+    color: green;
+}
+
+
+/* input, textarea {
+    color: rgb(54, 0, 153); 
+}
+
+input:hover:active, textarea:hover:focus {
+    background-color: aqua;
+} */
+
