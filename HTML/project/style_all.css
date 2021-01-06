@@ -1,28 +1,9 @@
-body{
-     font-family: Arial,sans-serif; /* шрифт ????*/
-     background-color: #f8f8f8;
-     }     
-header {
-     height: 100px; /* Высота блока */
-     border: 2px solid rgb(107, 104, 104); /* Параметры рамки */
-     background: url(img/fon_s.png) 100% 100% no-repeat;
-     }
+     
 .fon {
      height: 500px; /* Высота блока */
-     background: url(img/fon3.jpg) 100% 100% no-repeat; /* Добавляем фон */
+     background: url(img/fon.png) 100% 100% no-repeat; /* Добавляем фон */
      background-size: cover; /* Масштабируем фон */
-     }
-.nav {
-     margin-top: 5%; /* Отступ сверху */
-     font-size: 24px; /* размер шрифта */
-     font-weight: bold; /* жирный шрифт */
-     }      
-nav a {
-     text-decoration: none; /*убрать подчеркивание под ссылкой*/
-     }
-nav a:hover {
-     color: tomato;
-}     
+     }     
 .kontent {
      width: 600px; 
      height: 100px;

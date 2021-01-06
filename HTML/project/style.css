@@ -1,0 +1,49 @@
+body{
+    font-family: Arial,sans-serif; /* шрифт ????*/
+    background-color: #f8f8f8;
+    }
+
+header {
+    height: 100px; /* Высота блока */
+    border: 2px solid rgb(107, 104, 104); /* Параметры рамки */
+    background: url(img/fon_s.png) 100% 100% no-repeat;
+    position: relative; /* Относительное позиционирование */
+    text-align: center;
+}
+
+header img, nav {
+    position: absolute; /* Абсолютное позиционирование */
+}
+
+header img {
+    left: 0;
+    height: 100%;
+}
+
+h1 {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 40px;
+}
+
+nav {
+    font-size: 24px; /* размер шрифта */
+    font-weight: bold; /* жирный шрифт */
+    bottom: 0; /* Положение от нижнего края */
+    right: 10px; /* Положение от правого края */
+    }  
+
+nav a {
+    text-decoration: none; /*убрать подчеркивание под ссылкой*/
+    }
+
+a:link {
+    color: rgb(218, 45, 15);
+}
+
+a:visited {
+    color: rgb(58, 11, 2);
+}
+
+a:hover {
+    color:  rgb(185, 102, 85);
+}
