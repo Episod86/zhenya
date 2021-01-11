@@ -1,0 +1,26 @@
+.fon {
+    height: 500px; /* Высота блока */
+    background: url(img/fon.png) 100% 100% no-repeat; /* Добавляем фон */
+    background-size: cover; /* Масштабируем фон */
+    }     
+.kontent {
+    width: 600px; 
+    height: 100px;
+    margin-top: 10%; /* Отступ сверху */
+    margin-left: 200px;
+    float: left;
+    font-size: 24px;/* размер шрифта */
+    }
+a.button {
+    display: inline-block;
+    width: 10em;
+    height: 2.5em;
+    line-height: 2.5em;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #9379da;
+    border-radius: 5px;
+    box-shadow: 0 0 0 60px rgba(27, 24, 24, 0) inset, .1em .1em .2em rgb(13, 2, 41);
+    background: linear-gradient(#0b0b1d, #594588 48%, #5f5180 52%, #744bd3);
+    }

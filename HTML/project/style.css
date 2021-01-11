@@ -16,7 +16,7 @@ header img, nav {
 }
 
 header img {
-    left: 0;
+    left: 5px;
     height: 100%;
 }
 
@@ -32,9 +32,9 @@ nav {
     right: 10px; /* Положение от правого края */
     }  
 
-nav a {
+nav a, a.button {
     text-decoration: none; /*убрать подчеркивание под ссылкой*/
-    }
+}
 
 a:link {
     color: rgb(218, 45, 15);
