@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			display: table;			
+		}
+
+		.wheather {
+			text-align: center;
+			display: table-cell;
+			width: 100px;
+			height: 170px;	
+			border: 1px solid white;		
+		}
+
+		.wheather:hover {
+			box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+		}
+
+		img {
+			width: 100px;
+			padding: 25px 0px 25px;
+		}
+
+		.data {
+			display: block;
+			background-color: rgb(16, 177, 206);
+			color: white;
+			height: 25px;
+			font-size: 20px;
+			font-weight: 500;
+		}
+
+		.temp {
+			display: block;
+			font-size: 24px;
+			margin-bottom: 0px;
+		}	
+
+        sup {
+			font-size: 0.6em;
+		}
+	</style>
+	<title>Document</title>
+</head>
+<body>
+	<div class="wheather">
+			<span class="data">31.08</span>
+			<img src="weather-sun.jpg" alt="Солнечно">
+			<span class="temp"> 20<sup>0</sup> </span>
+		</div>
+		<div class="wheather"> 
+			<span class="data">01.09</span>
+			<img src="weather-snow.jpg" alt="Снег">
+			<span class="temp"> - 3<sup>0</sup></span>
+		</div>
+		<div class="wheather"> 
+			<span class="data">02.09</span>
+			<img src="weather-blizzard.jpg" alt="Облачно">
+			<span class="temp">-10 <sup>0</sup></span>
+		</div>
+</body>
+</html>
