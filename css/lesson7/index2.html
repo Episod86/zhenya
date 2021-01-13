@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		div {
+			display: inline-block;
+			height: 170px;
+			width: 100px;
+			position: relative;
+		}
+
+		div:hover {
+			box-shadow: 0 0 10px rgba(0,0,0,0.5);
+		}
+
+		span {
+			display: block;
+			text-align: center;
+			height: 15%;
+			width: 100%;
+		}
+
+		.data {
+			background-color: rgb(16, 177, 206);
+			color: white;
+			font-size: 20px;
+			font-weight: 500;
+		}
+
+		.temp {
+			font-size: 24px;
+			height: 15%;
+			position: absolute;
+			bottom: 5px;
+		}
+		
+
+	</style>
+	<title>Document</title>
+</head>
+<body>
+	<div style="background: url('weather-sun.jpg') no-repeat center">
+		<span class="data">31.08</span>
+		<span class="temp"> +20&#176 </span>
+	</div>
+	
+	<div style="background: url('weather-snow.jpg') no-repeat center">
+		<span class="data">01.09</span>
+		<span class="temp"> -3&#176 </span>
+	</div>
+
+	<div style="background: url('weather-blizzard.jpg') no-repeat center">
+		<span class="data">02.09</span>
+		<span class="temp"> -10&#176 </span>
+	</div>
+
+</body>
+</html>
