@@ -1,20 +1,29 @@
-.box {
+.box, .header, nav, .content {
     display: flex;
+}
+
+.box, .content {
+    justify-content: space-between;  
+}
+
+nav, aside, .footer {
+    color: white;
+}
+
+
+.box {
     flex-direction: column;
-    justify-content: space-between;
     width: 1000px;
     align-content: space-between;
     text-align: center;  
 }
 
 .header {
-    display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     background-color:#1c6d5d;
     height: 200px;
     flex-wrap: wrap;
-    margin-bottom: 10px;
 }
 
 #logo {
@@ -25,23 +34,17 @@
 }
 
 nav {
-    display: flex;
     justify-content: center;
     align-items: center;
     height: 40px;
     background-color: rgb(25, 15, 82);
-    color: white;
-    width: 100%;
-    
+    width: 100%;    
 }
 
 .content {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 10px;
+    margin: 10px;
     height: 60px;
 }
-
 
 article {
     background-color: turquoise;
@@ -58,20 +61,14 @@ article {
 aside {
     flex: 0 1 200px;
     min-width: 100px;
-    background-color: violet;
-
-}
+    background-color: rgb(180, 33, 180);
+   }
 
 main {
     flex: 1 0 570px;
 }
 
-
-
 .footer {
-    display: flex;
-    justify-content: center;
-    color:white;
     height: 150px;
     background-color:#165548;    
 }
