@@ -40,12 +40,14 @@ body {
 
 .div_3 {
     padding-bottom: 10px;
-    border: 1px solid #f2f5f9;
+    /* border: 1px solid #f2f5f9; */
 }
 
 .div_2:hover, .div_3:hover {
+    outline: 1px solid rgb(12, 83, 12); 
     background-color: rgb(8, 185, 8);
-    border: 1px solid rgb(12, 83, 12); 
+    /* border: 1px solid rgb(12, 83, 12);  */
+    
 }
 
 .footer {
