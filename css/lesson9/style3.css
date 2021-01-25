@@ -1,6 +1,9 @@
-
+* {
+    box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif; 
+    margin: 0 auto;
 }
 
 .content {
@@ -8,8 +11,7 @@ body {
     background-color: #f2f5f9;
     border-top: 1px solid #d9e1ec;
     border-bottom: 1px solid #d9e1ec;
-    position: relative;
-}
+    }
 
 .block {
     display: flex;
@@ -46,13 +48,13 @@ body {
 .div_2:hover, .div_3:hover {
     outline: 1px solid rgb(12, 83, 12); 
     background-color: rgb(8, 185, 8);
-    /* border: 1px solid rgb(12, 83, 12);  */
     
 }
 
-.footer {
-   position: absolute;
-   right: 0;
-   bottom: -30px;
+footer {
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 30px; 
+
 }
 

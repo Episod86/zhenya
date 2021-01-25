@@ -4,13 +4,16 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* общие стили */
 body {
-    font-family: montserat;
+    background-color: #282828; 
+    /* font-family: montserat; */
     font-size: 14px;
     font-weight: 400;
+    font-style: normal;
     color: #ffffff;
     width: 100vw;
     height: 100vh;
@@ -18,11 +21,11 @@ body {
 }
 
 .box { 
-    /* height: 100wh; */
-    /* min-height: 900px; */
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
-    background-color: #282828; 
+    margin: 0 auto;
+    
 
 }
 
@@ -34,27 +37,23 @@ a {
 /* стили хедер */
 .main {
     
-    min-height: 900px;
+    max-height: 900px;
     background: url(img/bgc.jpg) no-repeat center; /* Добавляем фон */
     background-size: cover; /* Масштабируем фон */
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-align-items: center;
+    align-items: center;
     /* flex-wrap: wrap; */
     /* align-content: space-between; */
     
 
 }
 header {
-    /* border: 1px solid red; */
     height: 20vh;
-    
     min-width: 57%;
     display: flex;
     flex-direction: column;
-   
-    
 }
 
 .hed-adress, .hed-navigation {
