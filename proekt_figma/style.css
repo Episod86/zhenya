@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
 
 * {
@@ -10,7 +10,7 @@
 /* общие стили */
 body {
     background-color: #282828; 
-    /* font-family: montserat; */
+    font-family: montserrat;
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
@@ -37,7 +37,7 @@ a {
 /* стили хедер */
 .main {
     
-    max-height: 900px;
+    min-height: 900px;
     background: url(img/bgc.jpg) no-repeat center; /* Добавляем фон */
     background-size: cover; /* Масштабируем фон */
     display: flex;
