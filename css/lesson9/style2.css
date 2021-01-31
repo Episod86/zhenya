@@ -42,7 +42,7 @@ body {
                 background: rgb(25, 15, 82);
                 color: white;
                 width: 100%;
-                min-height: 40px;
+                flex: 0 0 40px;
             }
 
         .main {
@@ -98,4 +98,3 @@ body {
             flex: 0 0 150px;
             color: white;
         }
-
