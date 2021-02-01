@@ -34,12 +34,11 @@ body {
 
 .first_screen { 
     min-height: 100vh;
-    background: url(image/Rectangle.jpg) no-repeat;
-
+    background: url(image/Rectangle.png) no-repeat;
+    background-size: cover; 
 }
     .wrapper {
         max-width: 1120px;
-        /* background: #555555; */
         margin: 0 auto;
         padding: 30px 5px;
     }
@@ -53,6 +52,7 @@ body {
             list-style-type: none;
             color: #ffffff;
         }
+
             .header_logo_list li:first-child {
                 font-weight: 600;
                 font-size: 30px;
@@ -65,15 +65,30 @@ body {
                 letter-spacing: 0.12em; 
             }
 
-
         .header_nav_list {
             display: flex;
         }
+
             .header_nav_list li { 
                 padding: 15px 40px;
                 line-height: 16px;
                 letter-spacing: 0.05em;
             }
+
             .header_nav_list li:last-child {
                 padding-right: 0;
             }
+
+    .wrapper_h1 {
+        max-width: 556px;
+        margin: 0 auto;
+        padding-top: 128px;
+    }        
+        h1 {
+            font-family: Playfair Display;
+            font-weight: bold;
+            font-size: 48px;
+            line-height: 64px;
+            text-align: center;
+            color: #D4C17F;
+        }        
