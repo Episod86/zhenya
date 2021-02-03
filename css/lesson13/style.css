@@ -19,7 +19,7 @@ body {
         grid-template-columns: 25% 1fr 2fr 2fr 1fr 25% ; 
         grid-gap: 5px;
         font-size: 28px;
-}
+    }
 
         .header {
             grid-area: 1 / 1 / 2 / 7;
