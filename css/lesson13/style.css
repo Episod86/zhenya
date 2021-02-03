@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    padding: 20px;
+}
+
+    .container {
+        /* background-color: aqua; */
+        max-width: 1000px;
+        min-height: 100vh;
+        margin: 0 auto;
+        display: grid;
+        grid-template: minmax(200px, 25%) 4% repeat(3, 1fr) 15% / 25% 1fr 2fr 2fr 1fr 25% ; 
+        grid-gap: 10px;
+}
+
+        .header {
+            /* display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end; */
+            grid-area: 1 / 1 / 2 / 7;
+            background: #1c6d5d;
+            
+        }
+            
+            #logo {
+                background: yellow;
+                flex: 0 0 100px;
+                min-width: 200px;
+                margin: 15px;   
+            }
+
+            .nav {
+                grid-area: 2 / 1 / 3/ 7 ;
+                background: rgb(25, 15, 82);
+                color: white;               
+            }
+
+            .article_one {
+                grid-area: 3 / 1 / 4 / 4 ;
+                background: aqua;
+            }
+
+            .article_two {
+                grid-area: 3 / 4 / 4 / 7 ;
+                background: aqua;
+            }
+
+            .article_three {
+                grid-area: 5 / 1 / 6 / 3 ;
+                background: aqua;
+            }
+
+
+
+            .article_four {
+                grid-area: 5 / 3 / 6 / 5 ;
+                background: aqua;
+            }
+
+            .article_five {
+                grid-area: 5 / 5 / 6 / 7 ;
+                background: aqua;
+            }
+
+            .aside_one {
+                grid-area: 4 / 1 ;
+                background: rgb(138, 36, 138);
+                color: white;
+            }
+
+            .aside_two {
+                grid-area: 4 / 6 ;
+                background: rgb(138, 36, 138);
+                color: white;
+            }
+
+            .main {
+                grid-area: 4 / 2 / 5 / 6 ;
+            }
+
+
+
+
+            .footer {
+                grid-area: 6 / 1 / 7/ 7 ;
+                background-color: #165548;
+                color: white;
+            }
+        
+            
+            
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+        
