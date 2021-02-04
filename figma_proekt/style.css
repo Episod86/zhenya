@@ -21,6 +21,7 @@ body {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
+    color: #ffffff;
 }
 
     .container {
@@ -78,7 +79,7 @@ body {
             .header_nav_list {
                 display: flex;
                 list-style-type: none;
-                color: #ffffff;
+                /* color: #ffffff; */
             }
 
                 .header_nav_list li { 
@@ -95,6 +96,9 @@ body {
      flex-direction: column;
      justify-content: space-between;
      align-items: center;
+     margin: 295px 0;
+     /* position: relative; */
+
  }
         h1 {
             font-family: Playfair Display;
@@ -103,9 +107,11 @@ body {
             line-height: 64px;
             text-align: center;
             color: #D4C17F;
-            padding-bottom: 100px;
+            /* padding-bottom: 100px; */
         }         
 
         img {
+            /* position: absolute; */
+            /* top: 230px; */
             max-width: 40px;
         }
