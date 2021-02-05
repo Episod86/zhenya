@@ -21,7 +21,9 @@ body {
         header {
             display: flex;
             flex-wrap: wrap;
+            flex-direction: column;
             justify-content: flex-end;
+            align-items: flex-end;
             background: #1c6d5d;
             flex: 0 0 auto;
         }
@@ -32,8 +34,8 @@ body {
 
             #logo {
                 background: yellow;
-                flex: 0 0 200px;
-                min-height: 100px;
+                flex: 0 0 100px;
+                min-width: 200px;
                 margin: 15px;   
             }
 
@@ -42,7 +44,7 @@ body {
                 background: rgb(25, 15, 82);
                 color: white;
                 width: 100%;
-                flex: 0 0 40px;
+                height: 40px;
             }
 
         .main {
