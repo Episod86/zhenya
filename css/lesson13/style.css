@@ -15,7 +15,7 @@ body {
         min-height: 100vh;
         margin: 0 auto;
         display: grid;
-        grid-template-rows: 250px 40px 100px minmax(150px, 60vh) 150px 150px;
+        grid-template-rows: 300px 40px 150px minmax(200px, auto) 150px 200px;
         grid-template-columns: 25% minmax(auto, 1fr) minmax(auto, 2fr) minmax(auto, 2fr) minmax(auto, 1fr) 25% ;
         grid-gap: 5px;
         font-size: 28px;
