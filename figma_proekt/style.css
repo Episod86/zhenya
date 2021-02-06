@@ -92,6 +92,7 @@ body {
 
             .header_title {
                 display: flex;
+                /* flex: 0 2 300px;  */
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
@@ -131,7 +132,18 @@ body {
                     .header_contacts_adress a, .header_contacts_phone a{
                         display: flex;
                         align-items: center;
+                        position: relative;
                         /* justify-content: center; */
 
+                    }
+
+                    .header_contacts_adress a img:nth-child(2) {
+                        position: absolute;
+                        left: 14px;
+                        top: 15px;
+                    }
+
+                    .header_contacts_text {
+                        padding-left: 10px;
                     }
                 
