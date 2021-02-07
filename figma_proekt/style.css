@@ -261,7 +261,7 @@ body {
             }
 
 
-        form { 
+        .contact_box_form form { 
             display: grid;
             grid-template: repeat(2, 1fr) / repeat(2, 1fr);
             gap: 30px;
@@ -269,15 +269,60 @@ body {
         }
 
         .form_text {
+            display: flex;
+            align-items: center;
             font-size: 13px;
             line-height: 16px;
             text-align: center;        
             color: #E7E7E7;
         }
 
+
+
+
+
+/* стили maps_screen         */
+
+.maps_box {
+    display: flex;
+    flex-direction: column;
+    max-height: 495px;
+}
+
+.maps_title {
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #D4C17F;
+    padding-bottom: 100px;
+}
+
         
       
+/* стили question_form */
+.question_box {
+    padding: 180px 0;
+}
+.question_box_text {
+    padding-bottom: 50px;
+        
+}
 
+.question_box_text h3 {
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #D4C17F;  
+}
+
+
+.question_box_form form { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
 
 
 
