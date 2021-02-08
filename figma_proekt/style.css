@@ -56,11 +56,28 @@ body {
         text-align: center;    
     }
 
+    h1, h3 {
+        font-family: Playfair Display;
+        font-weight: bold;
+        color: #D4C17F;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 64px;
+        text-align: center;    
+    }         
+
+
+    h3 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
 /* стили first_screen */
 
 .first_screen { 
     min-height: 840px;
-
     background: url(image/Rectangle.png) no-repeat;
     background-size: cover; 
 }
@@ -131,16 +148,7 @@ body {
                 
             }
                
-                h1 {
-                font-family: Playfair Display;
-                font-weight: bold;
-                font-size: 48px;
-                line-height: 64px;
-                text-align: center;
-                color: #D4C17F;
-                }         
-
-            .header_contacts {
+           .header_contacts {
                 display: flex;
                 width: 100%;
                 max-width: 1110px;
@@ -199,11 +207,6 @@ body {
 
         .flat_name {
             grid-area: 1 / 1 / 2 / 3;
-            font-family: Playfair Display;
-            font-weight: bold;
-            font-size: 36px;
-            line-height: 48px;
-            color: #D4C17F;
             padding-bottom: 70px;
         }
 
@@ -249,12 +252,8 @@ body {
         }
             .contact_box_text h3 {
                 padding-bottom: 50px;
-                font-family: Playfair Display;
-                font-weight: bold;
-                font-size: 36px;
-                line-height: 48px;        
-                color: #D4C17F;
             }
+
             .contact_text {
                 font-size: 16px;
                 line-height: 24px;
@@ -307,14 +306,6 @@ body {
 .question_box_text {
     padding-bottom: 50px;
         
-}
-
-.question_box_text h3 {
-    font-family: Playfair Display;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    color: #D4C17F;  
 }
 
 
