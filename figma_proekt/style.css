@@ -46,21 +46,30 @@ body {
         padding: 10px;
     }
 
-    /* button {
-        background: #D4C17F;
-        height: 50px;
+    .input_name,
+    .input_tel {
+        background: rgba(255, 255, 255, 0.2);
+        text-align: center;
+        min-width: 255px;
+        color: #ffffff;
+        font-size: 18px;
+    }
+
+    .input_name::placeholder,
+    .input_tel::placeholder {
+        font-size: 14px;
+        line-height: 27px;
+        color: #bebebe;
+        padding: 12px;
+    }
+
+    button {
+        background: #d4c17f;
         color: #ffffff;
         font-weight: bold;
         font-size: 16px;
-        line-height: 27px;
+        padding: 12px;
     }
-
-    input {
-        background: #FFFFFF;
-        opacity: 0.2;
-        color: #BEBEBE;
-        text-align: center;    
-    } */
 
     h1, h3 {
         font-family: Playfair Display;
@@ -75,11 +84,11 @@ body {
         padding-bottom: 20px;   
     }         
 
-/* 
+ 
     h3 {
         font-size: 36px;
         line-height: 48px;
-    } */ 
+    } 
 
 /* стили first_screen */
 
@@ -176,18 +185,18 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
     }
 
         .character { 
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
             display: grid;
             grid-template-columns: 33% repeat(2, 23%) 21%;
-            gap: 70px;
-            max-width: 800px;
-            width: 100%;
-            padding: 100px 0 120px;
-            margin: 0 auto;
-        }      
+            gap: 26px;
+            padding: 120px 0;
+        }
+
             .character_data {
                 display: flex;
                 flex-direction: column;
@@ -195,6 +204,8 @@ body {
             }
         
                 .character_text {
+                    font-family: Roboto;
+                    font-weight: 300;
                     font-size: 20px;
                     line-height: 27px;
                     text-align: center;
@@ -203,7 +214,6 @@ body {
 
     .appatments {
         width: 100%;
-        max-width: 1110px;
         display: grid;
         grid-template: 1fr repeat(2, 320px) / repeat(2, 1fr);
         gap: 30px;
@@ -216,109 +226,126 @@ body {
         }
 
         .flat_first {
-            background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url(image/flat_1.jpg), #D4C17F;
+            background: linear-gradient(
+                180deg, 
+                rgba(36, 43, 51, 0) 0%, 
+                #242B33 100%
+                ), 
+            url(image/flat_1.jpg), #D4C17F;
         }
 
         .flat_second {
-            background: linear-gradient(180deg, #242B33 0%, rgba(36, 43, 51, 0) 0.01%, #242B33 100%), url(image/flat_2.jpg), #D4C17F;
+            background: linear-gradient(
+                180deg, 
+                #242B33 0%, rgba(36, 43, 51, 0) 0.01%, 
+                #242B33 100%
+                ), 
+            url(image/flat_2.jpg), #D4C17F;
         }
 
         .flat_third {
-            background: linear-gradient(180deg, rgba(36, 43, 51, 0) 0%, #242B33 100%), url(image/flat_3.jpg), #D4C17F;
+            background: linear-gradient(180deg, 
+                rgba(36, 43, 51, 0) 0%, 
+                #242B33 100%
+                ), 
+           url(image/flat_3.jpg), #D4C17F;
         }
 
         .flat_fourth {
-            background: linear-gradient(180deg, #242B33 0%, rgba(36, 43, 51, 0) 0.01%, #242B33 100%), url(image/flat_4.jpg), #D4C17F;
+            background: linear-gradient(180deg, 
+                #242B33 0%, rgba(36, 43, 51, 0) 0.01%, 
+                #242B33 100%
+                ), 
+            url(image/flat_4.jpg), #D4C17F;
         }
 
         .appatments div:not(:first-child){
             display: flex;
             align-items: flex-end;
-            padding-left: 50px;
-            padding-bottom: 50px;
+            padding: 50px;
+            
         }
 
-/* стили contact_screen  */
-.contact_screen {
-    min-height: 560px;
+/* стили contact  */
+.contact {
     background: url(image/contact_background.jpg) no-repeat;
     background-size: cover; 
 }
     .contact_box {
         display: flex;
-        /* flex-direction: column; */
         justify-content: space-between;
         width: 100%;
         padding: 180px 0;
     }
-        .contact_box_text {
-            max-width: 535px;
-            
+        
+        .contact_box_text h3 {
+            padding-bottom: 50px;
         }
-            .contact_box_text h3 {
-                padding-bottom: 50px;
-            }
 
-            .contact_text {
-                font-size: 16px;
-                line-height: 24px;
-            }
+        .contact_text {
+            font-size: 16px;
+            line-height: 24px;
+        }
 
 
         .contact_box_form form { 
             display: grid;
-            grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-            gap: 30px;
-            padding: 65px 0 0 35px ;
+            grid-template: repeat(2, 50px) / repeat(2, 1fr);
+            row-gap: 35px;
+            column-gap: 30px;
+            padding: 65px 0 0 35px;
         }
 
         .form_text {
-            display: flex;
-            align-items: center;
             font-size: 13px;
             line-height: 16px;
             text-align: center;        
             color: #E7E7E7;
         }
 
-
-
-
-
-/* стили maps_screen         */
+ 
+/* стили maps*/
 
 .maps_box {
     display: flex;
     flex-direction: column;
-    max-height: 495px;
+    padding: 180px 0;
 }
 
-.maps_title {
-    font-family: Playfair Display;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    color: #D4C17F;
-    padding-bottom: 100px;
-}
+    .maps_box h3 {
+        padding-bottom: 100px;
+    }
 
         
       
-/* стили question_form */
-.question_box {
-    padding: 180px 0;
-}
-.question_box_text {
-    padding-bottom: 50px;
-        
-}
+/* стили question */
 
+.question {padding-bottom: 180px;}
+
+.question_box h3 {
+    padding-bottom: 50px;
+}
 
 .question_box_form form { 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
 }
+
+
+    .question_box_form .form_text {
+        display: flex;
+        align-items: flex-end;
+    }
+
+/* стили footer */
+
+.footer_menu {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+}
+
 
 
 
