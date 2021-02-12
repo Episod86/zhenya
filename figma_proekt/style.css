@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Raleway:ital@0;1&family=Roboto:wght@300&display=swap');
 @font-face {
-    font-family: "Post No Bills Jaffna"; /* Гарнитура шрифта */
-    src: url(fonts/PostNoBillsJaffna.ttf); /* Путь к файлу со шрифтом */
+    font-family: "Post No Bills Jaffna"; 
+    src: url(fonts/PostNoBillsJaffna.ttf);
    }
 
 *, 
@@ -27,10 +27,9 @@ body {
 
     .container {
         width: 100vw;
-        width: 1920px;
+        max-width: 1920px;
         min-height: 100vh;
         margin: 0 auto;
-        padding: 0 20px;
         background-color: #242B33;
     }
 
@@ -92,30 +91,27 @@ body {
 
 /* стили first_screen */
 
-.first_screen { 
-    /* min-height: 840px; */
+.first_screen {
     background: url(image/Rectangle.png) no-repeat;
     background-size: cover; 
+    min-height: 840px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-    header {  
-        min-height: 840px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-        .menu {
+    .first_screen .menu {
             width: 100%;
             padding: 0 20px;
         }
 
-        .header_menu {
+        .menu .header_menu {
             padding-top: 30px;
             display: flex;
             justify-content: space-between;
         }
 
-            .header_menu_logo {
+            .header_menu .header_menu_logo {
                 display: flex;
                 flex-direction: column;
                 font-size: 12px;
@@ -134,7 +130,7 @@ body {
                     letter-spacing: 0.12em;
                 }
 
-            .header_nav_list {
+            .header_nav .header_nav_list {
                 display: flex;
                 list-style-type: none;
             }
@@ -152,67 +148,66 @@ body {
                     background-color: rgba(255, 255, 255, 0.04);
                 }
 
-            .header_title {
-                display: flex;
-                max-width: 556px;
-                width: 100%;
-                height: 250px;  
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                margin: 20px;
-            }
-               
-           .header_contacts {
-                display: flex;
-                justify-content: space-evenly;
-                margin-bottom: 74px;
-            }
-
-                .header_contacts_adress a, 
-                .header_contacts_phone a{
-                    display: flex;
-                    align-items: center;
-                }
-
-                .header_contacts_text {
-                    padding-left: 14px;
-                }
-
-/* стили content_screen*/
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-        .character { 
+        .first_screen .header_title {
+            display: flex;
+            max-width: 556px;
             width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 33% repeat(2, 23%) 21%;
-            gap: 26px;
-            padding: 120px 0;
+            height: 250px;  
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+        }
+               
+        .first_screen .header_contacts {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 74px;
         }
 
-            .character_data {
+            .header_contacts_adress a, 
+            .header_contacts_phone a{
                 display: flex;
-                flex-direction: column;
                 align-items: center;
             }
-        
-                .character_text {
-                    font-family: Roboto;
-                    font-weight: 300;
-                    font-size: 20px;
-                    line-height: 27px;
-                    text-align: center;
-                    padding-top: 53px;   
-                }
 
-    .appatments {
+            .header_contacts_text {
+                padding-left: 14px;
+            }
+
+/* стили content*/
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .content .character { 
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 33% repeat(2, 23%) 21%;
+        gap: 26px;
+        padding: 120px 0;
+    }
+
+        .character .character_data {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+            .character_data .character_text {
+                font-family: Roboto;
+                font-weight: 300;
+                font-size: 20px;
+                line-height: 27px;
+                text-align: center;
+                padding-top: 53px;   
+            }
+
+    .content .appatments {
         width: 100%;
         display: grid;
         grid-template: 1fr repeat(2, 320px) / repeat(2, 1fr);
@@ -220,12 +215,12 @@ body {
         font-size: 24px;
     }
 
-        .flat_name {
+        .appatments .flat_name {
             grid-area: 1 / 1 / 2 / 3;
             padding-bottom: 70px;
         }
 
-        .flat_first {
+        .appatments .flat_first {
             background: linear-gradient(
                 180deg, 
                 rgba(36, 43, 51, 0) 0%, 
@@ -234,7 +229,7 @@ body {
             url(image/flat_1.jpg), #D4C17F;
         }
 
-        .flat_second {
+        .appatments .flat_second {
             background: linear-gradient(
                 180deg, 
                 #242B33 0%, rgba(36, 43, 51, 0) 0.01%, 
@@ -243,7 +238,7 @@ body {
             url(image/flat_2.jpg), #D4C17F;
         }
 
-        .flat_third {
+        .appatments .flat_third {
             background: linear-gradient(180deg, 
                 rgba(36, 43, 51, 0) 0%, 
                 #242B33 100%
@@ -251,7 +246,7 @@ body {
            url(image/flat_3.jpg), #D4C17F;
         }
 
-        .flat_fourth {
+        .appatments .flat_fourth {
             background: linear-gradient(180deg, 
                 #242B33 0%, rgba(36, 43, 51, 0) 0.01%, 
                 #242B33 100%
@@ -262,8 +257,7 @@ body {
         .appatments div:not(:first-child){
             display: flex;
             align-items: flex-end;
-            padding: 50px;
-            
+            padding: 50px;   
         }
 
 /* стили contact  */
@@ -271,7 +265,8 @@ body {
     background: url(image/contact_background.jpg) no-repeat;
     background-size: cover; 
 }
-    .contact_box {
+
+    .contact .contact_box {
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -282,13 +277,12 @@ body {
             padding-bottom: 50px;
         }
 
-        .contact_text {
+        .contact_box_text .contact_text {
             font-size: 16px;
             line-height: 24px;
         }
 
-
-        .contact_box_form form { 
+        .contact_box .contact_box_form form { 
             display: grid;
             grid-template: repeat(2, 50px) / repeat(2, 1fr);
             row-gap: 35px;
@@ -296,12 +290,36 @@ body {
             padding: 65px 0 0 35px;
         }
 
-        .form_text {
+        form .form_text {
             font-size: 13px;
             line-height: 16px;
             text-align: center;        
             color: #E7E7E7;
         }
+
+/* стили video */
+
+.video .video_wrapper {
+    max-width: 719px;
+    margin: 0 auto;
+    position:relative;
+    }
+
+    .video_wrapper .video_item {
+        padding-top: 56.25%;
+    }
+
+    .video_wrapper .video_element {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .video_button {
+        z-index: 2;
+    } */
 
  
 /* стили maps*/
@@ -316,37 +334,102 @@ body {
         padding-bottom: 100px;
     }
 
+    .maps_box .maps_wrapper {
+        width: 100%;
+        position: relative;    
+    }
+
+        .maps_wrapper .maps_item {
+            padding-top: 32.25%;
+        }
+
+        .maps_wrapper .maps_element {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }    
         
-      
+     
 /* стили question */
 
-.question {padding-bottom: 180px;}
-
-.question_box h3 {
-    padding-bottom: 50px;
+.question_box {
+    padding-bottom: 180px;
 }
 
-.question_box_form form { 
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-}
-
-
-    .question_box_form .form_text {
-        display: flex;
-        align-items: flex-end;
+    .question_box h3 {
+        padding-bottom: 50px;
     }
+
+    .question_box .question_box_form form { 
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+        .question_box_form form .form_text {
+            display: flex;
+            align-items: flex-end;
+        }
 
 /* стили footer */
 
-.footer_menu {
-    display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
+.footer{
+    background: #2D343C;
+    max-width: 100%;
 }
+    
+    .footer .footer_menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 60px 0 51px ;
+    }
 
+    .footer_menu .footer_menu_logo {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        line-height: 14px;
+        padding-right: 20px;  
+    }
 
+        .footer_menu_logo div:first-child {
+            font-family: "Post No Bills Jaffna";
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 54px;
+        }
 
+        .footer_menu_logo div:last-child {
+            letter-spacing: 0.12em;
+        }
 
-        
+    .footer_menu .footer_nav .footer_nav_list {
+            list-style-type: none;
+        }
+
+        .footer_nav_list a {
+            display: block;
+            padding: 7.5px 20px;
+            line-height: 16px;
+            letter-spacing: 0.05em;
+        }
+
+            .footer_nav_list a:hover {
+                opacity: 0.9;
+                background-color: rgba(255, 255, 255, 0.04);
+            }
+
+            .footer_email {
+                color: #D4C17F;
+                font-weight: 700;
+            }  
+            
+        .footer_nav_list li:last-child{
+            display: flex;
+        }
+            
+            .footer_nav_list li:last-child a{
+                padding: 12.5px 0 0 20px; 
+            }
