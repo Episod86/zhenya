@@ -1,4 +1,4 @@
 'use strict'
 
 let name = prompt('Как тебя зовут?');
-alert(`Тебя зовут ${name}`); 
+alert(confirm(`Тебя зовут ${name}?`)); 
