@@ -313,25 +313,35 @@ body {
 
 .video .video_wrapper {
     max-width: 719px;
+    min-height: 650px;
     margin: 0 auto;
-    position:relative;
+    position: relative;
     }
 
-    .video_wrapper .video_item {
+    /* .video_wrapper {
         padding-top: 56.25%;
-    }
+    } */
 
-    .video_wrapper .video_element {
+    /* .video_wrapper .video_element {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
+        height: 100%;  
+    } */
+
+    video {
+        width: 100%;
         height: 100%;
+
     }
 
-    /* .video_button {
+    .video_button {
+        position: absolute;
         z-index: 2;
-    } */
+        top: 275px;
+        left: 310px;
+    }
 
  
 /* стили maps*/
