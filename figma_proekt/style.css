@@ -26,7 +26,6 @@ body {
 }
 
     .container {
-        width: 100vw;
         max-width: 1920px;
         min-height: 100vh;
         margin: 0 auto;
@@ -163,13 +162,17 @@ body {
             display: flex;
             max-width: 556px;
             width: 100%;
-            height: 250px;  
+            /* height: 250px;   */
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             margin: 20px;
             padding-top: 276px;
         }
+
+            .header_title img {
+                padding-top: 100px;
+            }
                
         .first_screen .header_contacts {
             display: flex;
@@ -195,7 +198,7 @@ body {
 }
 
     .content .character { 
-        max-width: 100%;
+        width: 100%;
         max-width: 800px;
         margin: 0 auto;
         display: grid;
@@ -313,36 +316,16 @@ body {
 
 .video .video_wrapper {
     max-width: 719px;
-    min-height: 650px;
     margin: 0 auto;
     position: relative;
     }
 
-    /* .video_wrapper {
-        padding-top: 56.25%;
-    } */
-
-    /* .video_wrapper .video_element {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;  
-    } */
-
-    video {
-        width: 100%;
-        height: 100%;
-
-    }
-
-    .video_button {
+    .video_button { /* и вот что дальше с этой кнопкой делать, я пока не знаю */
         position: absolute;
         z-index: 2;
         top: 275px;
         left: 310px;
     }
-
  
 /* стили maps*/
 
