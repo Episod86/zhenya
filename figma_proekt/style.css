@@ -458,4 +458,43 @@ body {
         background-color:  #1f252c;;
         height: 2px;
         border: 0;
-    }    
+    }  
+    
+
+/* медиа     */
+@media screen and (max-width: 1140px) {
+    .footer_menu .footer_menu_logo {
+        padding-left: 20px;
+        padding-right: 0;
+    }
+
+    .footer_nav .footer_nav_list {
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 995px) {
+
+    .contact .contact_box {
+        flex-direction: column;
+    }
+
+    .question_box .question_box_form form { 
+        grid-template-rows: repeat(4, 1fr) ;
+        grid-template-columns: 1fr ;
+        padding: 0 50px;
+    }
+
+    .footer .footer_menu {
+        grid-template: repeat(3, 1fr) / 1.6fr 2.6fr;
+        column-gap: 0;
+        row-gap: 20px;
+    }
+
+    .footer_menu .footer_menu_logo {
+        grid-area: 1 / 1 / 4 / 2; 
+    }
+
+}   
+
+
