@@ -9,4 +9,14 @@
       header.classList.remove("menu_active");
     }
   };
-})();
+})();  
+
+(function () {
+  const burgerItems = document.querySelector(".burger");
+  const navMenu = document.querySelector(".header_nav");
+  burgerItems.addEventListener ("click", () => {
+  navMenu.classList.add("header_nav_active");
+  console.log(navMenu);
+  });
+  
+}) ();
