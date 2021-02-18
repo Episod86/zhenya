@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 let x1 = 12.5, x2 = 245, x3 = "Hello", x4 = undefined, x5 = null, x6 = true, x7 = [1,5,7,12,3,'значение'], x8 = {'Вася':'Имя'}, x9 = function () {} ;
 
