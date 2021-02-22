@@ -1,15 +1,13 @@
 'use strict';
 
 // Задание1.
-// let mesage, i = 1, number, numberSquare;
-// while (i <= 9) {
-//     number = i;
-//     numberSquare = number ** 2;
+// let mesage, i = 1;
+// while (i <=9) {
 //     if (i === 1) {
-//         mesage = `        Квадрат   ${number}   ${numberSquare}`;
+//         mesage = `        Квадрат   ${i} =  ${i ** 2}`;
 //     } else {
 //         mesage = `${mesage}
-//         Квадрат   ${number}   ${numberSquare}`;
+//         Квадрат   ${i} =  ${i ** 2}`;
 //     };    
 //     i ++;
 // };
@@ -23,10 +21,10 @@
 // while (i <= number) {
 //     if ((interValue % 2 == 0) && (interValue % 5 != 0)) {
 //         alert (interValue);
-//         i++
-//         interValue++
+//         i++;
+//         interValue++;
 //     } else {
-//         interValue++
+//         interValue++;
 //     };
 // };
 
@@ -47,14 +45,16 @@
 // alert (sumN);
 
 // Задание 5
-const x = +prompt('Введите целое положительное число');
-for (let i = 1; i <= x; i++) {
-    if ( x % i == 0) {
-        alert (i);
-    };    
-}
-// let sumN = 0;
+// const x = +prompt('Введите целое положительное число');
+// for (let i = 1; i <= x; i++) {
+//     if ( x % i == 0) {
+//         alert (i);
+//     };    
+// }
 
-// Выведите все натуральные делители числа x в порядке возрастания (включая 1 и само число).
-// Задание 6
+
+// Задание 6 
+// const y = +prompt('Введите целое положительное число');
+// let sumDigit;
+
 // Вывести на экран все двузначные числа сумма цифр которых делится на  введенное число n.
