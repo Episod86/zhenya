@@ -1,37 +1,51 @@
 'use strict';
 
 // Задание1.
-let mesage = '', i = 1, number, numberSquare;
-while (i <= 9) {
-    number = i;
-    numberSquare = number ** 2;
-    if (i === 1) {
-        mesage = `${mesage}    Квадрат   ${number}   ${numberSquare}`;
-    } else {
-        mesage = `${mesage} 
-    Квадрат   ${number}   ${numberSquare}`;
-    };    
-    i ++;
-};
-alert(mesage);
+// let mesage, i = 1, number, numberSquare;
+// while (i <= 9) {
+//     number = i;
+//     numberSquare = number ** 2;
+//     if (i === 1) {
+//         mesage = `        Квадрат   ${number}   ${numberSquare}`;
+//     } else {
+//         mesage = `${mesage}
+//         Квадрат   ${number}   ${numberSquare}`;
+//     };    
+//     i ++;
+// };
+// alert(mesage);
 
-// Написать цикл для вывода квадратов всех чисел от 1 до 9.
-// В итоге вы должны получить такую картину:
-// Квадрат 1 = 1
-// Квадрат 2 = 4
-// Квадрат 3 = 9
-// Квадрат 4 = 16
-// и т.д.
 
 // Задание2.
-// Напишите скрипт, который запрашивает число n и выводит на экран n первых четных чисел. 
-// Затем измените программу таким образом, чтобы числа кратные 5 не выводились на экран. (Переход к следующей итерации: continue)
+// const number = +prompt('Введите целое положительное число');
+// let i = 1;
+// let interValue = 1;
+// while (i <= number) {
+//     if ((interValue % 2 == 0) && (interValue % 5 != 0)) {
+//         alert (interValue);
+//         i++
+//         interValue++
+//     } else {
+//         interValue++
+//     };
+// };
 
 // Задание3.
-// Напишите скрипт, который вычисляет сумму всех введенных пользователем чисел. Когда пользователь прекратит вводить числа ( нажмет «Отмена») скрипт должен вывести полученную сумму на экран. 
+// let num, numberSum = 0;
+// while (num = +prompt('Введите число')) {
+//     numberSum = numberSum + num;
+// }
+// alert (numberSum);
+
 
 // Задание4.
-// Написать скрипт, который запрашивает ввод натурального числа n и выводит сумму всех чисел от 0 до n
+const n = +prompt('Введите целое положительное число');
+let sumN = 0;
+for (let i = 0; i <= n; i++) {
+    sumN = sumN + i;
+}
+alert (sumN);
+
 // Задание 5
 // Выведите все натуральные делители числа x в порядке возрастания (включая 1 и само число).
 // Задание 6
