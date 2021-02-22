@@ -3,7 +3,7 @@
 const n = +prompt('Введите длину шоколадки'); 
 const m = +prompt('Введите ширину шоколадки');
 const k = +prompt('Сколько долек Вы хотите отломить?');  
-if ((k < m * n) && ((k % n === 0) || (k % n === 0))) {
+if ((k < m * n) && ((k % n === 0) || (k % m === 0))) {
     alert('Можно');
 } else {
     alert('Нельзя');
@@ -17,6 +17,7 @@ const quant = +prompt('Какое количество поездок вы пл�
 let numOne = 0, numTen = 0, numSixty = 0, remainTrips;
 
 remainTrips = quant;
+
 numSixty = Math.trunc(remainTrips / tripsSixty);
 remainTrips = quant - numSixty * tripsSixty;
 
@@ -29,14 +30,9 @@ if (remainTrips <= Math.trunc(priceTen / priceOne)) {
     numTen ++;
 };
 
-if ((numTen * priceTen) > priceSixty){
+if ((numTen * priceTen + numOne * priceOne) > priceSixty){
     numSixty ++;
     numTen = 0;
-    if  (quant - (numSixty * tripsSixty) > 0) {
-        numOne = quant - (numSixty * tripsSixty);
-    } else {
-        numOne = 0;
-    };
 };
 
 alert(`${numOne} билетов на 1 поездку, ${numTen} билетов на 10 поездок,${numSixty} билетов на 60 поездок`);

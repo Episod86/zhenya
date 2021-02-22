@@ -3,104 +3,103 @@
 
 const number = +prompt('Введите целое число от 100 до 999');
 let nameNumber = '';
+let hundreds = Math.trunc(number / 100);
+let dozens = Math.trunc((number - hundreds * 100) / 10);
+let units = (number % 10);
 
-switch (true) {
-    case (number >= 100 && number < 200):
+switch (hundreds) {
+    case 1:
         nameNumber = 'Сто';
-        remainder = number - 100;
         break;
-    case (number >= 200 && number < 300):
+    case 2:
         nameNumber = 'Двести';
-        remainder = number - 200;
         break;
-    case (number >= 300 && number < 400):
+    case 3:
         nameNumber = 'Триста';
         break;
-    case (number >= 400 && number < 500):
+    case 4:
         nameNumber = 'Четыреста';
         break;
-    case (number >= 500 && number < 600):
+    case 5:
         nameNumber = 'Пятьсот';
         break;
-    case (number >= 600 && number < 700):
+    case 6:
         nameNumber = 'Шестьсот';
         break;
-    case (number >= 700 && number < 800):
+    case 7:
         nameNumber = 'Семьсот';
         break;
-    case (number >= 800 && number < 900):
+    case 8:
         nameNumber = 'Восемьсот';
         break;
-    case (number >= 900 && number < 1000):
+    case 9:
         nameNumber = 'Девятьсот';
         break;
     default:
 };
 
-let dozens = (number % 100);
-let units = (number % 10);
-if (dozens >=20) {
-    switch (true) {
-        case (dozens >= 20 && dozens < 30):
-            nameNumber = `${nameNumber} двадцать`;
-            break;
-        case (dozens >= 30 && dozens < 40):
-            nameNumber = `${nameNumber} тридцать`;
-            break;
-        case (dozens >= 40 && dozens < 50):
-            nameNumber = `${nameNumber} сорок`;
-            break;
-        case (dozens >= 50 && dozens < 60):
-            nameNumber = `${nameNumber} пятьдесят`;
-            break;
-        case (dozens >= 60 && dozens < 70):
-            nameNumber = `${nameNumber} шестьдесят`;
-            break;
-        case (dozens >= 70 && dozens < 80):
-            nameNumber = `${nameNumber} семьдесят`;
-            break;
-        case (dozens >= 80 && dozens < 90):
-            nameNumber = `${nameNumber} восемьдесят`;
-            break;
-        case (dozens >= 90 && dozens < 100):
-            nameNumber = `${nameNumber} девяносто`;
-            break;
-        default:
-    }; 
-} else if (dozens >=10) {
-    switch (dozens) {
-        case 11:
-            nameNumber = `${nameNumber} одинадцать`;
-            break;
-        case 12:
-            nameNumber = `${nameNumber} двенадцать`;
-            break;
-        case 13:
-            nameNumber = `${nameNumber} тринадцать`;
-            break;
-        case 14:
-            nameNumber = `${nameNumber} четырнадцать`;
-            break;
-        case 15:
-            nameNumber = `${nameNumber} пятнадцать`;
-            break;
-        case 16:
-            nameNumber = `${nameNumber} шестнадцать`;
-            break;
-        case 17:
-            nameNumber = `${nameNumber} семнадцать`;
-            break;
-        case 18:
-            nameNumber = `${nameNumber} восемнадцать`;
-            break;
-        case 19:
-            nameNumber = `${nameNumber} деввятнадцать`;
-            break;
-        default:
+switch (dozens) {
+    case 2:
+        nameNumber = `${nameNumber} двадцать`;
+        break;
+    case 3:
+        nameNumber = `${nameNumber} тридцать`;
+        break;
+    case 4:
+        nameNumber = `${nameNumber} сорок`;
+        break;
+    case 5:
+        nameNumber = `${nameNumber} пятьдесят`;
+        break;
+    case 6:
+        nameNumber = `${nameNumber} шестьдесят`;
+        break;
+    case 7:
+        nameNumber = `${nameNumber} семьдесят`;
+        break;
+    case 8:
+        nameNumber = `${nameNumber} восемьдесят`;
+        break;
+    case 9:
+        nameNumber = `${nameNumber} девяносто`;
+        break;
+    case 1: 
+        dozens = (number % 100);
+        units = 0;
+        switch (dozens) {
+            case 11:
+                nameNumber = `${nameNumber} одинадцать`;
+                break;
+            case 12:
+                nameNumber = `${nameNumber} двенадцать`;
+                break;
+            case 13:
+                nameNumber = `${nameNumber} тринадцать`;
+                break;
+            case 14:
+                nameNumber = `${nameNumber} четырнадцать`;
+                break;
+            case 15:
+                nameNumber = `${nameNumber} пятнадцать`;
+                break;
+            case 16:
+                nameNumber = `${nameNumber} шестнадцать`;
+                break;
+            case 17:
+                nameNumber = `${nameNumber} семнадцать`;
+                break;
+            case 18:
+                nameNumber = `${nameNumber} восемнадцать`;
+                break;
+            case 19:
+                nameNumber = `${nameNumber} деввятнадцать`;
+                break;
+            default:
             nameNumber = `${nameNumber} десять`;
-    };
-    units = 0;
-};
+        };
+    default:
+}; 
+
 if (units != 0) {
     switch (units) {
         case 1:

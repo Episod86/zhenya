@@ -69,14 +69,29 @@ switch (integer) {
 // Задание 3
 let hour = new Date().getHours();
 
-switch (true) {
-    case (hour >= 6 && hour <= 10):
+switch (hour) {
+    case 6:
+    case 7:
+    case 8:
+    case 9:
+    case 10: 
         alert ('Доброе утро');
         break;   
-    case (hour >= 11 && hour <= 17):
+    case 11:
+    case 12:
+    case 13:
+    case 14:
+    case 15:
+    case 16:
+    case 17: 
         alert ('Добрый день');
         break;
-    case (hour >= 18 && hour <= 23):
+    case 18:
+    case 19:
+    case 20:
+    case 21:
+    case 22:
+    case 23:
         alert ('Добрый вечер');
         break; 
     default:
