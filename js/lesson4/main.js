@@ -51,16 +51,3 @@ let numberThird = prompt('Введите третье число','');
 let message = ((numberFirst > numberSecond) && (numberFirst > numberThird)) ? numberFirst :
   ((numberSecond > numberFirst) && (numberSecond > numberThird)) ? numberSecond : numberThird;
 alert( Math.round(message));
-
-
-
-
-
-
-
-
-
-
-
-
-
