@@ -1,13 +1,12 @@
 'use strict';
 
 // Задание1.
-let mesage, i = 1;
+let i = 1, mesage;
 while (i <=9) {
-    (i === 1) ? mesage = `Квадрат   ${i} =  ${i ** 2}` : 
-        mesage = `${mesage} \nКвадрат   ${i} =  ${i ** 2}`;   
+    mesage = (i === 1) ? `Квадрат   ${i} =  ${i ** 2}` : `${mesage} \nКвадрат   ${i} =  ${i ** 2}`;   
     i ++;
 };
-alert(mesage);
+alert(`${mesage}`);
 
 
 // Задание2.
@@ -48,7 +47,7 @@ for (let i = 10; (i < 100); i++) {
     // if ((Math.trunc(i / 10) + (i % 10)) === y) { 
     //     alert( i )
     // };
-    if (((+String( i )[0]) + (+String( i )[2, 1])) === y) {
+    if (((+String( i )[0]) + (+String( i )[1])) === y) {
         alert( i )
     };
 };
