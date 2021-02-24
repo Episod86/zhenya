@@ -11,12 +11,15 @@
   };
 })();  
 
+
+
 (function () {
   const burgerItems = document.querySelector(".burger");
   const navMenu = document.querySelector(".header_nav");
   burgerItems.addEventListener ("click", () => {
-  navMenu.classList.add("header_nav_active");
-  console.log(navMenu);
+  navMenu.classList.toggle("header_nav_active");
+  burgerItems.classList.toggle("burger_active");
+  // console.log(navMenu);
   });
   
 }) ();
