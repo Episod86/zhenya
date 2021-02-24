@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="js/main.js" defer></script> <!--ставлю defer и перестает работать-->
+    <script src="js/main.js" defer></script> 
     <title>Жилой комплекс HouseVOP</title>
 </head>
 
@@ -26,7 +26,13 @@
                             <li><a href="#cont">Контакты</a></li>
                         </ul>
                     </nav>
+                    <div class="header_burger burger">
+                        <hr class="burger_line_first">
+                        <hr class="burger_line_second">
+                        <hr class="burger_line_third">
+                    </div>
                 </div>
+                
             </div>
             <div class="header_title">
                 <h1>Жилой комплекс в историческом центре</h1>
@@ -67,15 +73,17 @@
                     <span class="character_text">6 км велодорожек</span>
                 </div>
             </div>
-            <div id="flats" class="appatments">
-                <div class="flat_name">
-                    <h3>Наши квартиры</h3>
+            <div class="appatments">
+                <h3>Наши квартиры</h3>
+                <div id="flats">
+                    <div class="flat_first">1Лофт — 3 этажа</div>
+                    <div class="flat_second">2Лофт — 2 этажа</div>
+                    <div class="flat_third">3Лофт — 3 этажа</div>
+                    <div class="flat_fourth">4Лофт — 2 этажа</div>
                 </div>
-                <div class="flat_first">Лофт — 3 этажа</div>
-                <div class="flat_second">Лофт — 2 этажа</div>
-                <div class="flat_third">Лофт — 3 этажа</div>
-                <div class="flat_fourth">Лофт — 2 этажа</div>
+
             </div>
+            
         </section>
        
         <section class="contact">
@@ -102,17 +110,8 @@
             </div>
         </section>
 
-        <!-- <section class="video">
-            <div class="video_wrapper">
-                <div class="video_item"></div>
-                <iframe class="video_element" src="https://www.youtube.com/embed/Jg407DH_CuI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <img class="video_button" src="image/play-icon.svg" alt="play">
-            </div>
-        </section> -->
-
         <section class="video">
             <div class="video_wrapper">
-                <img class="video_button" src="image/play-icon.svg" alt="play">
                 <video src="video/ЖК «Фонтанка, 76», г. Санкт-Петербург.mp4" controls poster="image/video-img.jpg" width=100% height=650px></video>
             </div>
         </section>
@@ -149,8 +148,8 @@
                     <div>HouseVOP</div>
                     <div>ЖИЛОЙ КОМПЛЕКС</div>
                 </div>
-    
-                <nav class="footer_nav">
+                
+                <nav class="footer_nav item_del">
                     <ul class="footer_nav_list">
                         <li><a href="#char">О&nbsp;комплексе</a></li>
                         <li><a href="#district">Район</a></li>
@@ -174,7 +173,7 @@
                         <li><a href="tel:8 (812) 123-45-67">Телефон: 8 (812) 123-45-67</a></li>
                         <li><a href="#">Отдел продаж: 10:00 - 20:00</a></li>
                         <li><a href="mailto:vip@housevip.ru">E-mail: <span class="footer_email">vip@housevip.ru</span></a></li>
-                        <li>
+                        <li class="social_box">
                             <a href="https://www.youtube.com/" target="blank"><img src="image/Youtobe-logo.svg" alt="Youtobe-logo"></a>
                             <a href="https://vk.com/" target="blank"><img src="image/VK-logo.svg" alt="VK-logo"></a>
                             <a href="https://www.facebook.com/" target="blank"><img src="image/facebook-logo.svg" alt="facebook-logo"></a>
