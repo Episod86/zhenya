@@ -366,7 +366,7 @@ form .form_text {
 }
 .footer_nav_list a {
     display: block;
-    padding: 7.5px 20px;
+    padding: 8px 20px;
     line-height: 16px;
     letter-spacing: 0.05em;
 }
@@ -375,7 +375,7 @@ form .form_text {
     background-color: rgba(255, 255, 255, 0.04);
 }
 .footer_nav_list .social_box {
-    padding-top: 12.5px;
+    padding-top: 13px;
 }
 .social_box a {
     padding: 0 20px;
@@ -497,7 +497,7 @@ form .form_text {
     .burger_active .burger_line_second {
         position: absolute;
         top: 10px;
-        width: 100%;
+        width: 10%;
     }
     .burger_active .burger_line_first{
         transform: rotate(45deg);
