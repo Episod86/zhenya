@@ -161,9 +161,10 @@ ul {
 }
 .header_menu .header_burger {
     display: none;
-    width: 30px;
-    height: 30px;
-}  
+    width: 70px;
+    height: 70px;
+    padding: 20px;
+}
 .header_burger:hover{
     opacity: 0.9;
     background-color: rgba(255, 255, 255, 0.04);
@@ -493,17 +494,11 @@ form .form_text {
     .burger_active .burger_line_third{
         display: none;
     }
-    .burger_active .burger_line_first,
+    .burger_active .burger_line_first {
+        transform: translateY(14px) rotate(45deg);
+    }
     .burger_active .burger_line_second {
-        position: absolute;
-        top: 10px;
-        width: 10%;
-    }
-    .burger_active .burger_line_first{
-        transform: rotate(45deg);
-    }
-    .burger_active .burger_line_second{
-        transform: rotate(-45deg);
+        transform: translateY(-14px) rotate(-45deg);
     }
     .header_nav .header_nav_list {
         flex-direction: column;
