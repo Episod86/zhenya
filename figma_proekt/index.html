@@ -4,8 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="js/main.js" defer></script> 
+    <script src="js/header.js" defer></script>
+    <script src="js/burger.js" defer></script>
+    <script src="js/scroll.js" defer></script>
     <title>Жилой комплекс HouseVOP</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/favicon/favicon-16x16.png">
+    <link rel="manifest" href="image/favicon/site.webmanifest">
+    <link rel="mask-icon" href="image/favicon/safari-pinned-tab.svg" color="#9a2525">
+    <link rel="shortcut icon" href="image/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#5f5757">
+    <meta name="msapplication-config" content="image/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#5f5757">
 </head>
 
 <body>
@@ -19,11 +30,11 @@
                     </div>
                     <nav class="header_nav">
                         <ul class="header_nav_list">
-                            <li><a href="#char">О&nbsp;комплексе</a></li>
-                            <li><a href="#district">Район</a></li>
-                            <li><a href="#flats">Каталог&nbsp;квартир</a></li>
-                            <li><a href="#">Ипотека</a></li>
-                            <li><a href="#cont">Контакты</a></li>
+                            <li><a href="#char" class="js_scroll">О&nbsp;комплексе</a></li>
+                            <li><a href="#district" class="js_scroll">Район</a></li>
+                            <li><a href="#flats" class="js_scroll">Каталог&nbsp;квартир</a></li>
+                            <li><a href="#" class="js_scroll">Ипотека</a></li>
+                            <li><a href="#cont" class="js_scroll">Контакты</a></li>
                         </ul>
                     </nav>
                     <div class="header_burger burger">
@@ -40,7 +51,7 @@
             </div>
             <div class="header_contacts wrapper">
                 <div class="header_contacts_adress">
-                    <a href="#district">
+                    <a href="#district" class="js_scroll">
                         <img src="image/placeholder-icon.svg" alt="place">
                         <span class="header_contacts_text">Наб. реки Фонтанки 10-15</span> 
                     </a>
@@ -151,25 +162,25 @@
                 
                 <nav class="footer_nav item_del">
                     <ul class="footer_nav_list">
-                        <li><a href="#char">О&nbsp;комплексе</a></li>
-                        <li><a href="#district">Район</a></li>
-                        <li><a href="#flats">Каталог&nbsp;квартир</a></li>
-                        <li><a href="#">Ипотека</a></li>
-                        <li><a href="#cont">Контакты</a></li>
+                        <li><a href="#char" class="js_scroll">О&nbsp;комплексе</a></li>
+                        <li><a href="#district" class="js_scroll">Район</a></li>
+                        <li><a href="#flats" class="js_scroll">Каталог&nbsp;квартир</a></li>
+                        <li><a href="#" class="js_scroll">Ипотека</a></li>
+                        <li><a href="#cont" class="js_scroll">Контакты</a></li>
                     </ul>
                 </nav>
                 <nav class="footer_nav">
                     <ul class="footer_nav_list">
-                        <li><a href="#char">О&nbsp;комплексе</a></li>
-                        <li><a href="#district">Район</a></li>
-                        <li><a href="#flats">Каталог&nbsp;квартир</a></li>
-                        <li><a href="#">Ипотека</a></li>
-                        <li><a href="#cont">Контакты</a></li>
+                        <li><a href="#char" class="js_scroll">О&nbsp;комплексе</a></li>
+                        <li><a href="#district" class="js_scroll">Район</a></li>
+                        <li><a href="#flats" class="js_scroll">Каталог&nbsp;квартир</a></li>
+                        <li><a href="#" class="js_scroll">Ипотека</a></li>
+                        <li><a href="#cont" class="js_scroll">Контакты</a></li>
                     </ul>
                 </nav>
                 <nav class="footer_nav">
                     <ul id="cont" class="footer_nav_list">
-                        <li><a href="#district">Адрес: Наб. реки Фонтанки 10-15</a></li>
+                        <li><a href="#district" class="js_scroll">Адрес: Наб. реки Фонтанки 10-15</a></li>
                         <li><a href="tel:8 (812) 123-45-67">Телефон: 8 (812) 123-45-67</a></li>
                         <li><a href="#">Отдел продаж: 10:00 - 20:00</a></li>
                         <li><a href="mailto:vip@housevip.ru">E-mail: <span class="footer_email">vip@housevip.ru</span></a></li>
@@ -181,16 +192,13 @@
                         </li>
                     </ul>
                 </nav>
-                
             </div>
             <hr>
             <div class="footer_sub">Cделано по макету Фигма 
                 <a href="https://figma.info/blog/templates/2019-05-24-shablon-zhilogo-kompleksa.html" target="blank"> Сайт жилого комплекса</a>
             </div>    
-                
         </footer> 
-    </main>          
-   
+    </main>            
 </body>
 
 </html>
