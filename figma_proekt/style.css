@@ -306,6 +306,10 @@ form .form_text {
     height: 358px; 
     /* border: 1px solid rgba(255, 255, 255, 0.04); */
 }
+
+.leaflet-control-zoom-in, .leaflet-control-zoom-out {
+    padding: 0;
+}
 /* 
 .maps_box .maps_wrapper {
     width: 100%;
