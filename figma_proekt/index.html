@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <script src="js/header.js" defer></script>
     <script src="js/burger.js" defer></script>
     <script src="js/scroll.js" defer></script>
+    <script src="js/maps.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
     <title>Жилой комплекс HouseVOP</title>
     <link rel="apple-touch-icon" sizes="180x180" href="image/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="image/favicon/favicon-32x32.png">
@@ -128,12 +131,19 @@
         </section>
 
 
-        <section class="maps">
+        <!-- <section class="maps">
             <div class="maps_box wrapper">
                 <h3 id="district">Район на карте</h3>
                 <div class="maps_wrapper">
                     <div class="maps_item"></div>              
                     <iframe class="maps_element" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.2444236685037!2d30.337639216097188!3d59.94467898187832!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696317353b89bb9%3A0x4a5baf20e1544c1b!2z0L3QsNCx0LXRgNC10LbQvdCw0Y8g0YDQtdC60Lgg0KTQvtC90YLQsNC90LrQuCwgMTAsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Nw!5e0!3m2!1sru!2sby!4v1612672998595!5m2!1sru!2sby" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section> -->
+
+        <section class="maps">
+            <div class="maps_box wrapper">
+                <h3 id="district">Район на карте</h3>
+                <div id="mapid"></div>
             </div>
         </section>
 

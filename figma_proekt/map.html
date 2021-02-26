@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <style>
+        #mapid { height: 180px; }
+    </style>
+    
+    
+</head>
+<body>
+    
+    <div id="mapid"></div>
+</body>
+<script>
+    var mymap = L.map('mapid').setView([59.944758, 30.339825], 10);
+    L.tileLayer('https://api.maptiler.com/maps/basic/{z}/{x}/{y}.png?key=01F0HVQLQFmbwudW5N0f', {
+    attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
+    }).addTo(mymap);
+
+    var marker = L.marker([59.944758, 30.339825]).addTo(mymap);
+
+</script>
+</html>

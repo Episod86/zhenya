@@ -302,7 +302,11 @@ form .form_text {
 .maps_box h3 {
     padding-bottom: 100px;
 }
-
+#mapid { 
+    height: 358px; 
+    /* border: 1px solid rgba(255, 255, 255, 0.04); */
+}
+/* 
 .maps_box .maps_wrapper {
     width: 100%;
     position: relative;    
@@ -316,7 +320,7 @@ form .form_text {
     left: 0;
     width: 100%;
     height: 100%;
-}    
+}     */
         
      
 /* стили question */
