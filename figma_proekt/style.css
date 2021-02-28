@@ -252,6 +252,9 @@ width: 100%;
     align-items: flex-end;
     padding: 50px;   
 }
+.image-slider {
+    display: none;
+}
 
 /* стили contact  */
 .contact {
@@ -439,6 +442,46 @@ form .form_text {
     .contact_box .contact_box_form form {
         padding-right: 35px;
     }
+
+    #flats {
+        display: none;
+    }
+
+    .image-slider {
+        display: block;
+    }
+    .slider-text {
+        position: absolute;
+        top: 20px;
+    }
+    .image-slider__image,
+    .image-slider__wrapper,
+    .image-slider__slide {
+        text-align: center;
+    }
+    .image-slider__image{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .image-slider .swiper-button-prev::after,
+    .image-slider .swiper-button-next::after {
+        color: #D4C17F;
+        font-size: 70px;
+    }
+    .image-slider .swiper-pagination {
+        bottom: 0;
+    }
+    .image-slider .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        background-color: #ffffff;
+    }
+    
 }
 
 @media screen and (max-width: 870px) {
@@ -522,11 +565,34 @@ form .form_text {
     } 
 }
 
+@media screen and (max-width: 700px) {
+    .swiper-container {
+        max-width: 600px;
+    }
+    .image-slider .swiper-button-prev::after,
+    .image-slider .swiper-button-next::after{
+        font-size: 30px;
+    }
+
+    .image-slider__wrapper img{
+        max-width: 400px;
+    }
+    .content .appatments h3 {
+        text-align: center;
+        padding-bottom: 30px;
+    }  
+}
 @media screen and (max-width: 670px) {
     h1 {
         font-size: 36px; 
     }
-    .appatments {
+    .swiper-container {
+        max-width: 400px;
+    }
+   .image-slider__wrapper img{
+        max-width: 300px;
+    }
+    /* .appatments {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -536,7 +602,7 @@ form .form_text {
     }   
     .content .appatments #flats{
         grid-template: repeat(4, 320px) / 1fr;
-    }
+    } */
 }
 
 
