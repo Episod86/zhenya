@@ -112,7 +112,7 @@ ul {
     align-items: center;
 }
 .first_screen {
-    background: url(image/Rectangle.png) no-repeat;
+    background: url(image/Rectangle-min.png) no-repeat;
     background-size: cover; 
     min-height: 840px;
 }
@@ -236,16 +236,16 @@ width: 100%;
     #242B33 100%),#D4C17F;
 }
 #flats .flat_first {
-    background-image: url(image/flat_1.jpg);
+    background-image: url(image/flat_1-min.jpg);
 }
 #flats .flat_second {
-    background-image: url(image/flat_2.jpg);
+    background-image: url(image/flat_2-min.jpg);
 }
 #flats .flat_third {
-    background-image: url(image/flat_3.jpg);
+    background-image: url(image/flat_3-min.jpg);
 }
 #flats .flat_fourth {
-    background-image: url(image/flat_4.jpg);
+    background-image: url(image/flat_4-min.jpg);
 }
 #flats div{
     display: flex;
@@ -258,7 +258,7 @@ width: 100%;
 
 /* стили contact  */
 .contact {
-    background: url(image/contact_background.jpg) no-repeat;
+    background: url(image/contact_background-min.jpg) no-repeat;
     background-size: cover; 
 }
 .contact .contact_box {
