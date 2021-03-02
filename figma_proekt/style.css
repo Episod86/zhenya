@@ -122,7 +122,7 @@ ul {
     padding: 0 20px;
     position: fixed;
     top: 0;
-    z-index: 100;
+    z-index: 10000;
     transition: .2s linear;
 }
 .menu_active {
@@ -621,4 +621,20 @@ form .form_text {
     .question_box h3 {
         text-align: center;
     }
+}
+
+@media screen and (max-width: 440px) { 
+    .footer .footer_menu {
+        grid-template: 1.5fr repeat(2, 3fr) / 1fr;
+    }
+    .footer_menu .footer_menu_logo {
+        grid-area: 1 / 1 / 2 / 1; 
+        text-align: center;
+    }
+    .footer .footer_sub {
+        flex-direction: column;
+    }
+    .footer_sub span{ 
+        padding: 0 0 20px 20px;
+    }    
 }
