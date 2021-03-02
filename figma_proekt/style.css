@@ -216,38 +216,38 @@ width: 100%;
 .content .appatments h3 { 
     padding-bottom: 100px;
 }
-#flats {
+.flats_image {
     display: grid;
     grid-template: repeat(2, 320px) / repeat(2, 1fr);
     gap: 30px;
     font-size: 24px;
 }
-#flats .flat_first, 
-#flats .flat_third{
+.flats_image .flat_first, 
+.flats_image .flat_third{
     background: linear-gradient(180deg, 
     rgba(36, 43, 51, 0) 0%, 
     #242B33 100%), #D4C17F;
 }
-#flats .flat_second,
-#flats .flat_fourth {
+.flats_image .flat_second,
+.flats_image .flat_fourth {
     background: linear-gradient(180deg, 
     #242B33 0%, 
     rgba(36, 43, 51, 0) 0.01%, 
     #242B33 100%),#D4C17F;
 }
-#flats .flat_first {
+.flats_image .flat_first {
     background-image: url(image/flat_1-min.jpg);
 }
-#flats .flat_second {
+.flats_image .flat_second {
     background-image: url(image/flat_2-min.jpg);
 }
-#flats .flat_third {
+.flats_image .flat_third {
     background-image: url(image/flat_3-min.jpg);
 }
-#flats .flat_fourth {
+.flats_image .flat_fourth {
     background-image: url(image/flat_4-min.jpg);
 }
-#flats div{
+.flats_image div{
     display: flex;
     align-items: flex-end;
     padding: 50px;   
@@ -447,7 +447,7 @@ form .form_text {
         padding-right: 35px;
     }
 
-    #flats {
+    .flats_image {
         display: none;
     }
 
@@ -623,7 +623,7 @@ form .form_text {
     }
 }
 
-@media screen and (max-width: 440px) { 
+@media screen and (max-width: 480px) { 
     .footer .footer_menu {
         grid-template: 1.5fr repeat(2, 3fr) / 1fr;
     }
@@ -637,4 +637,14 @@ form .form_text {
     .footer_sub span{ 
         padding: 0 0 20px 20px;
     }    
+}
+
+@media screen and (max-width: 395px) { 
+    .first_screen .header_contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact_box .contact_box_form form{
+        padding: 35px 10px;
+    }
 }
