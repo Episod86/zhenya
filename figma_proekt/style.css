@@ -211,7 +211,7 @@ ul {
     padding-top: 53px;   
 }
 .content .appatments {
-width: 100%;      
+    width: 100%;      
 }
 .content .appatments h3 { 
     padding-bottom: 100px;
@@ -312,10 +312,10 @@ form .form_text {
 #mapid { 
     height: 358px; 
 }
-
 .leaflet-control-zoom-in, .leaflet-control-zoom-out {
     padding: 0;
 }
+
 /* стили question */
 .question_box {
     padding-bottom: 180px;
@@ -340,7 +340,6 @@ form .form_text {
 .footer_nav_list .social_box{
     display: flex;
 }
-
 .footer .footer_menu {
     display: grid;
     grid-template-columns: repeat(3, 1.6fr) 2.6fr;
@@ -400,8 +399,7 @@ form .form_text {
     border: 0;
 }  
 
-
-    
+   
 /* медиа     */
 @media screen and (max-width: 1140px) {
     .content .appatments {
@@ -435,7 +433,7 @@ form .form_text {
 @media screen and (max-width: 980px) {
     .contact .contact_box {
         flex-direction: column;
-        padding: 80px 20px;
+        padding: 40px 20px 0 20px;
     }
     .contact_box_text {
         text-align: center; 
@@ -446,11 +444,9 @@ form .form_text {
     .contact_box .contact_box_form form {
         padding-right: 35px;
     }
-
     .flats_image {
         display: none;
     }
-
     .image-slider {
         display: block;
     }
@@ -484,8 +480,7 @@ form .form_text {
         line-height: 20px;
         font-size: 14px;
         background-color: #ffffff;
-    }
-    
+    }   
 }
 
 @media screen and (max-width: 870px) {
@@ -577,7 +572,6 @@ form .form_text {
     .image-slider .swiper-button-next::after{
         font-size: 30px;
     }
-
     .image-slider__wrapper img{
         max-width: 400px;
     }
@@ -587,6 +581,7 @@ form .form_text {
         padding-bottom: 30px;
     }  
 }
+
 @media screen and (max-width: 670px) {
     h1 {
         font-size: 36px; 
@@ -629,20 +624,23 @@ form .form_text {
     }
     .footer_menu .footer_menu_logo {
         grid-area: 1 / 1 / 2 / 1; 
-        text-align: center;
+        padding-left: 20px;
     }
     .footer .footer_sub {
         flex-direction: column;
     }
-    .footer_sub span{ 
-        padding: 0 0 20px 20px;
-    }    
+    .footer_sub span { 
+        padding: 0 0 20px 40px;
+    } 
+    .footer_sub a { 
+        padding-left: 40px;
+    }   
 }
 
 @media screen and (max-width: 395px) { 
     .first_screen .header_contacts {
         flex-direction: column;
-        align-items: center;
+        padding-left: 20px;
     }
     .contact_box .contact_box_form form{
         padding: 35px 10px;
