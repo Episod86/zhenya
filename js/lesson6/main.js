@@ -46,16 +46,18 @@ const π = 3.14;
 const R = +prompt('Введите радиус окружности');
 calcCircumference();
 
-
-
 // Задание 6 *(по желанию)
 function calcLength() {
-   while (N > 1) {
+   do {
       N = N / 10;
       i++
-   };
+   } while (N > 1);  
    return alert(`${i}`);   
 }
-let i = 0
-let N = +prompt('Введите число');
+
+let N, controlN, i = 0
+while (controlN != true) {
+   N = +prompt('Введите число');
+   controlN = (N >0) ? true : false;
+}   
 calcLength(N);

@@ -1,10 +1,9 @@
 // Задание 1 
-function showHello(text, name) {
-    name = name || 'гость';
+function showHello(text, name = userName ||'гость') {
     return alert(`${text}, ${name}`);
 }
 const userName = prompt('Введите имя');
-showHello("Привет", userName);
+showHello("Привет");
 
 // Задание 2
 function multiply(n, m) {
