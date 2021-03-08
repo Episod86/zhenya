@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sum() {
+            let result = b;
+            for (let i = a; i < b; i++) {
+                result += i
+            };
+            return result;
+        };
+        
+        let a, b, controlA, controlB;
+
+        while (controlA != true) {
+            a = +prompt('Введите целое натуральное число');
+            controlA = ((a > 0) && (a % 1 == 0)) ? true : alert('Не удовлетворяет условию');
+        }; 
+
+        while (controlB != true) {
+            b = +prompt('Введите целое натуральное число');
+            controlB = ((b > 0) && (b % 1 == 0) && (b > a)) ? true : alert('Не удовлетворяет условию');
+        } 
+
+        alert (sum(a, b));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
