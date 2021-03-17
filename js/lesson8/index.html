@@ -16,7 +16,7 @@
         person.position = 'веб-журналистика';
         person.experience = 5;
        
-        let clone = {}; 
+        const clone = {}; 
         for (let key in person) {
             if (key == 'surname' || key == 'name' || key == 'yearBirth') {
                 clone[key] = person[key];
@@ -30,19 +30,14 @@
         delete person.middleName;
         showKey();
 
-        let i = 0;
-        for (let key in person) {
-            i++;
-        };
-        alert (`${i}`);
 
-        i = 0;
+        let quantity = 0, number = 0;
+
         for (let key in person) {
-            if (typeof person[key] == 'number') {
-                i++;
-            };   
+            quantity++;
+            number = (typeof person[key] === 'number') ? number + 1 : number;
         };
-        alert (`${i}`);
+        alert (`У объекта ${quantity} свойств, из которых ${number} числовые`);
     </script>
 
 </head>

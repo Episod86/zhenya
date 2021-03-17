@@ -9,15 +9,15 @@
         const salary = {};
 
         let key, wage;  
-        for (let i = 1; i <= 3; i++) {
+        for (let i = 1; i <= 10; i++) {
             key = prompt('Введите фамилию');
             wage = +prompt('Введите размер заработной платы', 0);
             salary[key] = wage;
         };
 
-        let clone = salary;
+        const clone = salary;
 
-        let averageSalary = () => {
+        const averageSalary = () => {
             let sum = 0;
             for (let key in salary) {
                 sum += salary[key];            
@@ -27,10 +27,10 @@
 
         salary.average = averageSalary();
 
-        let moreAverage = () => {
+        const moreAverage = () => {
             let i = 0;
             for (let key in salary) {
-                if (salary[key] >= salary.average && key != 'average' ) {
+                if (salary[key] >= salary.average && key !== 'average' ) {
                     i++
                 };          
             };
@@ -43,17 +43,18 @@
 
 
         // задание 3 
-        
-        let maxSalary = () => {
+
+        const maxSalary = () => {
             let mesage, max = 0;
 
             for (let key in salary) {
-                if (key != 'person' && key != 'average' ) { 
+                if (key != 'person' && key !== 'average' ) { 
                     if (salary[key] > max) {
                         max = salary[key];
+                        mesage = `${key}  ${salary[key]}`;
                         mesage = key + '  ' + salary[key];
                     } else if (salary[key] === max) {
-                        mesage += '  ' + key + '  ' + salary[key];
+                        mesage += `  ${key}  ${salary[key]}`;
                     };
                 };          
             };
