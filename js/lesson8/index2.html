@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const salary = {};
+
+        let key, wage;  
+        for (let i = 1; i <= 10; i++) {
+            key = prompt('Введите фамилию');
+            wage = +prompt('Введите размер заработной платы', 0);
+            salary[key] = wage;
+        };
+
+        const clone = salary;
+
+        const averageSalary = () => {
+            let sum = 0;
+            for (let key in salary) {
+                sum += salary[key];            
+            };
+            return (sum / Object.keys(salary).length);
+        };
+
+        salary.average = averageSalary();
+
+        const moreAverage = () => {
+            let i = 0;
+            for (let key in salary) {
+                if (salary[key] >= salary.average && key !== 'average' ) {
+                    i++
+                };          
+            };
+            return i;
+        };
+
+        salary.person = moreAverage();
+
+        console.log(salary); 
+
+
+        // задание 3 
+
+        const maxSalary = () => {
+            let mesage, max = 0;
+
+            for (let key in salary) {
+                if (key != 'person' && key !== 'average' ) { 
+                    if (salary[key] > max) {
+                        max = salary[key];
+                        mesage = `${key}  ${salary[key]}`;
+                    } else if (salary[key] === max) {
+                        mesage += `  ${key}  ${salary[key]}`;
+                    };
+                };          
+            };
+            return alert (mesage);
+        };
+
+        maxSalary();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

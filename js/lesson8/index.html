@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const person = {
+            surname: 'Алиева',
+            name: 'Александра',
+            middleName: 'Антоновна',
+        };
+        person.yearBirth = 1990; 
+        person.profession = 'журналист';
+        person.position = 'веб-журналистика';
+        person.experience = 5;
+       
+        const clone = {}; 
+        for (let key in person) {
+            if (key == 'surname' || key == 'name' || key == 'yearBirth') {
+                clone[key] = person[key];
+            };
+        };
+        
+        function showKey() {
+            return alert(('middleName' in person) ? (`${person.middleName}`) : (`Свойства middleName нет`));
+        };
+
+        delete person.middleName;
+        showKey();
+
+
+        let quantity = 0, number = 0;
+
+        for (let key in person) {
+            quantity++;
+            number = (typeof person[key] === 'number') ? number + 1 : number;
+        };
+        alert (`У объекта ${quantity} свойств, из которых ${number} числовые`);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
