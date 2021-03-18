@@ -11,7 +11,8 @@
             while ((key = prompt('Введите фамилию')) && (wage = +prompt('Введите размер заработной платы', 0))) {
                 this[key] = wage;
             };
-
+            
+            // я по другому сделать не смогла, хоть и очень старалась
             this.calcAverage = function() {
                 let sum = 0;
                 for (let key in this ) {
