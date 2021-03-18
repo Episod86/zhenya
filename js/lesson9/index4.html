@@ -15,27 +15,40 @@
             this.calcAverage = function() {
                 let sum = 0;
                 for (let key in this ) {
-                    console.log(key)
-                    console.log(this[key])
-                    sum += this[key];            
+                    if (key !== 'calcAverage' && key !== 'calcMax' && key !== 'calcMin') {
+                        sum += this[key]; 
+                    };
                 };
-                let average = (sum / Object.keys(this).length);
+                let average = (sum / (Object.keys(this).length - 3));
+                return average;
             };
 
-            // this.calcMin = function() {
-            //     let min;
-            //     for (let key in this) {
-            //         if (this[key] < min) {
-            //            min = this[key];
-            //         };
-            //     };
-            //     console.log(min);
-            // };
+            this.calcMax = function() {
+                let max = 0;
+                for (let key in this ) {
+                    if (key !== 'calcAverage' && key !== 'calcMax' && key !== 'calcMin' && this[key] > max) {
+                        max = this[key];
+                    };
+                };
+                return max;
+            };
+
+            this.calcMin = function() {
+                let min = this.calcAverage();
+                for (let key in this ) {
+                    if (key !== 'calcAverage' && key !== 'calcMax' && key !== 'calcMin' && this[key] < min) {
+                        min = this[key];
+                    };
+                };
+                return min;
+            };
         };
 
+                
         const salary = new Salary;
-        alert(salary.calcAverage());
-        // salary.calcMin();
+        console.log(salary.calcAverage().toFixed(2));
+        console.log(salary.calcMax());
+        console.log(salary.calcMin());
         console.log(salary);
         
     </script>

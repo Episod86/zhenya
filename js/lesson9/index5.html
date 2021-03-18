@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function Salary () {
+            let key, wage;  
+            while ((key = prompt('Введите фамилию')) && (wage = +prompt('Введите размер заработной платы', 0))) {
+                this[key] = wage;
+            };
+        };
+
+        
+        function topSalary(salary) {
+
+            let max = 0;
+            let maxName = null;
+
+            for (const [name, wages] of Object.entries(salary)) {
+                if (max < wages) {
+                    max = wages;
+                    maxName = name;
+                };
+            };
+
+            return maxName;
+        };
+        const salary = new Salary;
+        console.log(salary);
+        console.log(topSalary(salary));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
