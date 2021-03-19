@@ -11,45 +11,38 @@
             while ((key = prompt('Введите фамилию')) && (wage = +prompt('Введите размер заработной платы', 0))) {
                 this[key] = wage;
             };
+        };
             
-            // я по другому сделать не смогла, хоть и очень старалась
-            this.calcAverage = function() {
-                let sum = 0;
-                for (let key in this ) {
-                    if (key !== 'calcAverage' && key !== 'calcMax' && key !== 'calcMin') {
-                        sum += this[key]; 
-                    };
-                };
-                let average = (sum / (Object.keys(this).length - 3));
-                return average;
+        calcAverage = function() {
+            let average, sum = 0;
+            for (let key in salary ) {
+                sum += salary[key]; 
             };
-
-            this.calcMax = function() {
-                let max = 0;
-                for (let key in this ) {
-                    if (key !== 'calcAverage' && key !== 'calcMax' && key !== 'calcMin' && this[key] > max) {
-                        max = this[key];
-                    };
+            return average = (sum / Object.keys(salary).length);
+        };
+       
+        calcMax = function() {
+            let max = 0;
+            for (let key in salary) {
+                if (salary[key] > max) {
+                    max = salary[key];
                 };
-                return max;
             };
-
-            this.calcMin = function() {
-                let min = this.calcAverage();
-                for (let key in this ) {
-                    if (key !== 'calcAverage' && key !== 'calcMax' && key !== 'calcMin' && this[key] < min) {
-                        min = this[key];
-                    };
-                };
-                return min;
-            };
+            return max;
         };
 
+        calcMin = function() {
+            let min = calcAverage(salary);
+            for (let key in salary) {
+                if (salary[key] < min) {
+                    min = salary[key];
+                };
+            };
+            return min;
+        };
                 
         const salary = new Salary;
-        console.log(salary.calcAverage().toFixed(2));
-        console.log(salary.calcMax());
-        console.log(salary.calcMin());
+        alert(`Максимальна ЗП ${calcMax(salary)}, минимальная - ${calcMin(salary)}, средняя - ${calcAverage(salary).toFixed(2)}`)
         console.log(salary);
         
     </script>
