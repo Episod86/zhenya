@@ -6,43 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        function Salary () {
+        function List () {
             let key, wage;  
             while ((key = prompt('Введите фамилию')) && (wage = +prompt('Введите размер заработной платы', 0))) {
                 this[key] = wage;
             };
+        }
+        function Salary () {
+            list : new List;
+
         };
             
-        calcAverage = function() {
-            let average, sum = 0;
-            for (let key in salary ) {
-                sum += salary[key]; 
-            };
-            return average = (sum / Object.keys(salary).length);
-        };
+        // calcAverage = function() {
+        //     let average, sum = 0;
+        //     for (let key in salary ) {
+        //         sum += salary[key]; 
+        //     };
+        //     return average = (sum / Object.keys(salary).length);
+        // };
        
-        calcMax = function() {
-            let max = 0;
-            for (let key in salary) {
-                if (salary[key] > max) {
-                    max = salary[key];
-                };
-            };
-            return max;
-        };
+        // calcMax = function() {
+        //     let max = 0;
+        //     for (let key in salary) {
+        //         if (salary[key] > max) {
+        //             max = salary[key];
+        //         };
+        //     };
+        //     return max;
+        // };
 
-        calcMin = function() {
-            let min = calcAverage(salary);
-            for (let key in salary) {
-                if (salary[key] < min) {
-                    min = salary[key];
-                };
-            };
-            return min;
-        };
+        // calcMin = function() {
+        //     let min = calcAverage(salary);
+        //     for (let key in salary) {
+        //         if (salary[key] < min) {
+        //             min = salary[key];
+        //         };
+        //     };
+        //     return min;
+        // };
                 
         const salary = new Salary;
-        alert(`Максимальна ЗП ${calcMax(salary)}, минимальная - ${calcMin(salary)}, средняя - ${calcAverage(salary).toFixed(2)}`)
+        // alert(`Максимальна ЗП ${calcMax(salary)}, минимальная - ${calcMin(salary)}, средняя - ${calcAverage(salary).toFixed(2)}`)
         console.log(salary);
         
     </script>
