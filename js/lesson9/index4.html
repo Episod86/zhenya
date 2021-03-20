@@ -13,42 +13,28 @@
             };
         }
         function Salary () {
-            list : new List;
+            this.list = new List,
 
+            this.calcAverage = function() {
+                let average, sum = 0;
+                for (let key in this.list) {
+                    sum += this.list[key]; 
+                };
+                return average = (sum / Object.keys(this.list).length);
+            },
+
+            this.calcMax = function() {
+               return (Math.max.apply(null, (Object.values(this.list))));          
+            };
+
+            this.calcMin = function() {
+               return (Math.min.apply(null, (Object.values(this.list))));          
+            };
         };
             
-        // calcAverage = function() {
-        //     let average, sum = 0;
-        //     for (let key in salary ) {
-        //         sum += salary[key]; 
-        //     };
-        //     return average = (sum / Object.keys(salary).length);
-        // };
-       
-        // calcMax = function() {
-        //     let max = 0;
-        //     for (let key in salary) {
-        //         if (salary[key] > max) {
-        //             max = salary[key];
-        //         };
-        //     };
-        //     return max;
-        // };
-
-        // calcMin = function() {
-        //     let min = calcAverage(salary);
-        //     for (let key in salary) {
-        //         if (salary[key] < min) {
-        //             min = salary[key];
-        //         };
-        //     };
-        //     return min;
-        // };
-                
         const salary = new Salary;
-        // alert(`Максимальна ЗП ${calcMax(salary)}, минимальная - ${calcMin(salary)}, средняя - ${calcAverage(salary).toFixed(2)}`)
+        alert(`Максимальна ЗП ${salary.calcMax(salary)}, минимальная - ${salary.calcMin(salary)}, средняя - ${salary.calcAverage(salary).toFixed(2)}`)
         console.log(salary);
-        
     </script>
 </head>
 <body>
