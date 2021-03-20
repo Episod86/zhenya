@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Sector(R, α) {
+            this.radius = R;
+            this.degree = α;
+           
+            this.calc = function() {
+                const S = π * R ** 2 * α / 360;
+                alert (S);
+            };
+        }
+
+        const π = 3.14;
+        const radius = +prompt('Введите радиус сектора', 0)
+        const degree = +prompt('Введите градусную меру угла', 0);
+        
+        const sector = new Sector(radius, degree);
+        sector.calc();
+      
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
