@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        // создание массива 
+        const Arr = [2, -15, 12, 83, -29, 111, -6, 22];
+
+        // индекс трехзначного элемента
+        console.log(Arr.findIndex(item => item >= 100 && item <= 1000));
+
+        // элемент кратный 5
+        console.log(Arr.find(item => item % 5 === 0));
+
+        // массив, содержащий все положительные элементы  из массива Arr
+        const arrPositive = Arr.filter(item => item > 0);
+        console.log(arrPositive);
+
+        // Cортировка массива Arr по возрастанию.
+        console.log(Arr.sort( (a, b) => a - b ));
+
+        //  Преобразование - отрицательные значения заменены их модулями (Math.abs) , а положительные умножены на 2
+        const arrTransform = Arr.map(item => item < 0 ? Math.abs(item) : item * 2);
+        console.log(arrTransform);
+
+        // Cортировка массива Arr по убыванию.
+        console.log(Arr.sort( (a, b) => b - a ));
+
+        // Измените порядок элементов в Arr на обратный
+        console.log(Arr.reverse());
+        
+        // произведение элементов массива. 
+        const composition = Arr.reduce((a, b) => a * b, 1); 
+        console.log(composition);
+
+        // среднее арифметическое элементов массива Arr. 
+        const summa = Arr.reduce((a, b) => a + b, 0);
+        console.log(summa / Arr.length);
+        
+    </script>
+</head>
+<body>
+
+
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let fruits = [
+            'Яблоко', 
+            'Апельсин', 
+            'Слива',
+        ];
+        console.log(fruits); 
+
+        fruits.push('Абрикос');
+        console.log(fruits); 
+
+        fruits.unshift('Нектарин', 'Персик');
+        console.log(fruits); 
+
+        const pos = fruits.indexOf('Яблоко');
+        fruits.splice(pos, 2);
+        console.log(fruits);
+
+        favoriteFruits = fruits.slice(0, 3); 
+        console.log(favoriteFruits);
+
+        const berries = [
+            'Барабарис', 
+            'Виноград', 
+            'Годжи',
+        ];
+        console.log(berries);
+
+        fruits = fruits.concat(berries);
+        console.log(fruits);
+        console.log(fruits.length);
+
+        favoriteFruits.forEach((item, index, array) => {
+            alert(`${item} имеет позицию ${index}`);
+        });
+
+        console.log(fruits.indexOf('Слива'));
+
+        console.log(fruits.includes('Яблоко')); 
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
