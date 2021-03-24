@@ -7,24 +7,22 @@
     <title>Document</title>
     <script>
         function calcWords(str) {
-            let num = 0, pos = -1, ind = ' ';
-            while ((pos = str.indexOf(ind, pos + 1)) != -1) {
-                num ++;
-                console.log(str.slice(pos, 1));
-                while (str.slice(pos, 1) == ind) {
-                    pos ++;
-                };
+
+            let num = (str.length === 0) ? 0 : 1, pos = 0, ind = ' ';
+
+            while ((pos = str.slice(pos).indexOf(ind, pos + 1)) != -1) {
+                str = str.slice(pos).trim();
+                pos = 0;
+                num = num + 1;
             };
             return num;
         };
-        const line = prompt('Введите строку');
 
-        alert(`Количество слов - ${calcWords(line.trim())}`);
+        alert(`Количество слов - ${calcWords(prompt('Введите строку').trim())}`);
         
     </script>
 </head>
 <body>
-    Написать функцию, которая подсчитывает количество слов во введенной строке. (Все слова разделены пробелами)
     
 </body>
 </html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcDoubl (str) {
+            let pos = 0;
+            while (isNaN(+str.slice(pos, pos + 1))) {
+                pos++;
+            };
+
+            let end = (isNaN(+str[str.length - 1])) ? -2 : -1;
+            while (isNaN(+str.slice(end, end + 1))) {
+                end--;
+            };
+
+            return str = `${str.slice(0, pos).trim()} ${+str.slice(pos, end) * 2} ${str.slice(end).trim()}` 
+        };
+        alert(calcDoubl(prompt('Введите сумму в любой валюте')));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
