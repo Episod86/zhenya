@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcWords(str) {
+            let num = 0, pos = -1, ind = ' ';
+            while ((pos = str.indexOf(ind, pos + 1)) != -1) {
+                num ++;
+                console.log(str.slice(pos, 1));
+                while (str.slice(pos, 1) == ind) {
+                    pos ++;
+                };
+            };
+            return num;
+        };
+        const line = prompt('Введите строку');
+
+        alert(`Количество слов - ${calcWords(line.trim())}`);
+        
+    </script>
+</head>
+<body>
+    Написать функцию, которая подсчитывает количество слов во введенной строке. (Все слова разделены пробелами)
+    
+</body>
+</html>
