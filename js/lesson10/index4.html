@@ -11,13 +11,7 @@
             while (isNaN(+str.slice(pos, pos + 1))) {
                 pos++;
             };
-
-            let end = (isNaN(+str[str.length - 1])) ? -2 : -1;
-            while (isNaN(+str.slice(end, end + 1))) {
-                end--;
-            };
-
-            return str = `${str.slice(0, pos).trim()} ${+str.slice(pos, end) * 2} ${str.slice(end).trim()}` 
+            return str = `${str.slice(0, pos)} ${parseFloat(str.slice(pos)) * 2} ${str.slice(pos + `${parseFloat(str.slice(pos))}`.length + 1)}`;            
         };
         alert(calcDoubl(prompt('Введите сумму в любой валюте')));
     </script>
