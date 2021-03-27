@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function verifiesAddress(str) {
+            let pos1,pos2,mesage;
+            pos1 = str.indexOf('@');
+            pos2 = str.indexOf('.');
+            return mesage = (pos1 <= 0 || pos2 <= 0 ||      // '@' или '.' не содержатся в адресе или стоят в начале
+                   pos1 - pos2 >= -1 ||                     // '.' стоит раньше '@'сразу за ней
+                   str.slice(pos1 + 1).indexOf('@') !== -1 || // '@' содержится больше 1 раза 
+                   str.slice(pos2 + 1).indexOf('.') !== -1 || // '.' содержится больше 1 раза
+                   pos2 === str.length) ?                   // '.' находится в конце
+                   'Адрес электронной почты имеет некорректный формат' : 'e-mail';   
+        };
+
+        alert(verifiesAddress(prompt('Введите e-mail')));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
