@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        const speed = [9.73, 9.68, 9.71, 9.74, 9.72, 9.75];
+        let [max1, max2, max3 , ...rest] = speed.sort( (a, b) => b - a );
+        
+        console.log(max1);
+        console.log(max2);
+        console.log(max3);
+        console.log(rest);
+    </script>
+    
+</head>
+<body>
+    <!-- В массиве содержатся результаты  6  замеров скорости входящего интернет соединения.
+    let speed=[9.73, 9.68, 9.71, 9.74, 9.72, 9.75];
+    Напишите деструктурирующее присваивание, которое:
+    Переменным max1, max2  и max3   присваивает три максимальные по величине значения из этого массива.
+    В массив rest заносит оставшиеся значения скорости. -->
+
+</body>
+</html>

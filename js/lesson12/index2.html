@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const monitors = {
+            Philips:21,
+            Asus:19,
+            Samsung:23.5,
+            LG24MK: 23.6,   
+            LG27GL: 27,
+        };
+        const sm = 2.54;
+        const motitorsSm = Object.fromEntries(Object.entries(monitors).map(([key, value]) => [key, value * sm]));
+        console.log(motitorsSm);
+        console.log(`Количество мониторов ${Object.entries(monitors).length}`);
+        
+    </script>
+</head>
+<body>
+    <!-- Выполните задание, используя методы  Object.entries  и Object.fromEntries.
+    Объект monitors содержит  значения диагонали мониторов в дюймах.
+    Philips:21,   Asus:19,   Samsung:23.5,   LG24MK: 23.6,   LG27GL: 27
+    Создайте объект, содержащий значения диагонали этих же мониторов в сантиметрах.
+    Определите количество моделей мониторов, содержащихся в объекте monitors -->
+
+</body>
+</html>
