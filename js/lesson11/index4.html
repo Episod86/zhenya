@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkPalindrome(str){
+            let i = 0;
+            do {
+                if (str[i] !== str[str.length - i - 1]) {
+                    return false;
+                } else {i++};
+            } while (i < Math.floor(str.length / 2));
+            return true;   
+        };
+        
+        alert(checkPalindrome(prompt('Введите слово').toLowerCase()));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
