@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const experience = {
+            person1: 10,
+            person2: 25,
+            person3: 20,
+            person4: 2,
+            person5: 7,
+            person6: 43,
+            person7: 96,
+            person8: 11,
+            person9: 3,
+            person10: 5,
+        };
+        let summa = 0;
+        for (let value of Object.values(experience)) {
+            summa += value;  
+        }
+        console.log(`Cредний стаж ${(summa / Object.values(experience).length).toFixed(2)}`);
+        console.log(`Количество сотрудников, чей стаж не превышает 3 года - ${Object.values(experience).filter(item => item <= 3).length}`);
+        console.log(`Количество сотрудников со стажем работы 20 лет и более - ${Object.values(experience).filter(item => item >= 20).length}`);
+
+    </script>
+</head>
+<body>
+    <!-- Выполните задание, используя  метод  Object.values  и  цикл for..of.
+    Объект experience содержит сведения о стаже работы каждого сотрудника фирмы (свойства и значения задать самостоятельно). 
+    Вычислите средний стаж работы сотрудников,  количество сотрудников, чей стаж не превышает 3 года и количество сотрудников 
+    со стажем работы 20 лет и более.  -->
+
+    
+</body>
+</html>
