@@ -5,16 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        const yearMls = 3600 * 1000 * 24 * 365;                       // млс в году
+        const dayMls = 3600 * 1000 * 24;                              // млс в сутках 
         const date = new Date("1986-12-07");
-        console.log(date.getDay());
+        const days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
 
-        const end = Date.now();
-        let st = end - date;
-        
-        console.log((end - date)/ 3600*1000*24*365);
+        console.log(days[date.getDay()]);                             // день недели в который родилась
+
+        const age = Math.floor((Date.now() - date) / yearMls)
+        console.log(age);                                             // количество полных лет 
+
+        const dateLast = new Date(date);
+        dateLast.setFullYear(dateLast.getFullYear() + age + 1);       // дата следующего ДР
+        console.log(days[dateLast.getDay()]);                         // день недели следующего ДР
 
 
-
+        console.log(Math.floor((+dateLast - Date.now()) / dayMls));   // количество дней до ДР
 
     </script>
 </head>
