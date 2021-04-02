@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const yearMls = 3600 * 1000 * 24 * 365;                       // млс в году
+        const dayMls = 3600 * 1000 * 24;                              // млс в сутках 
+        const date = new Date("1986-12-07");
+        const days = ['ВС', 'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ'];
+
+        console.log(days[date.getDay()]);                             // день недели в который родилась
+
+        const age = Math.floor((Date.now() - date) / yearMls)
+        console.log(age);                                             // количество полных лет 
+
+        const dateLast = new Date(date);
+        dateLast.setFullYear(dateLast.getFullYear() + age + 1);       // дата следующего ДР
+        console.log(days[dateLast.getDay()]);                         // день недели следующего ДР
+
+
+        console.log(Math.floor((+dateLast - Date.now()) / dayMls));   // количество дней до ДР
+
+    </script>
+</head>
+<body>
+    Задание 2
+Напишите скрипт, который определяет,  в какой день недели вы родились, и выводит название этого дня недели.
+Дополните скрипт, чтобы он определял,  на какой день недели выпадает ваш день рождения в этом году.
+Дополните скрипт, чтобы он определял ваш возраст на данный момент (Количество полных лет).
+Дополните скрипт,  таким образом, чтобы он вычислял, сколько дней осталось до вашего дня рождения в этом(или следующем) году.
+
+</body>
+</html>

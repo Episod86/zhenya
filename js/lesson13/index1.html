@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        const person = {
+            fio: 'Sokolova Lidiya Anatolevna',
+            age: 33,
+            check: true,
+        }
+        let json = JSON.stringify(person);
+        console.log(json);
+        user = JSON.parse(json);
+        console.log(user);
+        for (let key in user) {
+            console.log(`${key} : ${user[key]}`);
+        }
+    </script>
+</head>
+<body>
+    Задание 1
+Создайте объект, свойствами которого являются ф.и.о человека, его возраст и отметка о прохождении медосмотра (false или true).
+Преобразуйте этот объект в JSON.
+Выведите полученную строку.
+Преобразуйте полученный JSON в новый объект.
+При помощи цикла for.. in выведите все свойства нового  объекта и их значения.
+
+</body>
+</html>

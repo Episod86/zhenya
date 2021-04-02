@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function calcDate(numeric){;
+            const arrMonth = [
+                'января',
+                'февраля',
+                'марта',
+                'апреля',
+                'мая',
+                'июня',
+                'июля',
+                'августа',
+                'сентября',
+                'октября',
+                'ноября',
+                'декабря'
+            ];
+            const date = new Date(Date.now() + (numeric * 1000 * 3600 * 24));
+            return `${date.getDate()} ${arrMonth[date.getMonth()]} ${date.getFullYear()}г.`;
+        };
+        alert (calcDate(prompt('Введите количество дней', 0)));
+        
+
+    </script>
+</head>
+<body>
+    Напишите функцию, которая принимает в качестве параметра количество дней и возвращает какие  будут
+    год, месяц и число через это количество дней.
+</body>
+</html>
