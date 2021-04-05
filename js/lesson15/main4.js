@@ -1,5 +1,7 @@
 'use strict';
 
+const elementTr = document.querySelectorAll('tr');
+console.log(elementTr);
 
 
 // В таблице допущена ошибка. Строка Петрова А.И…. вставлена в таблицу дважды.( 3 и 4 строка).  
