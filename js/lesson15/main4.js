@@ -10,14 +10,10 @@ for (let i = 0; i < elementTr.length - 1; i++) {
 
 const elNumericClone = document.querySelector('#violet').cloneNode(true); // клонируем 1-ую строку таблицы в переменную
 elNumericClone.removeAttribute('id');
-elNumericClone.setAttribute('class', 'yellow');
+elNumericClone.classList.add('yellow');
 
 const table =  document.querySelector('#graphik > tbody');
 table.append(elNumericClone);                                             // вставляем узел
 // вставляем HTML    
 table.insertAdjacentHTML('afterbegin', '<tr class="yellow"><td></td><td colspan="31">График дежурств сотрудников на август 2020 года</td></tr>');
 
-const colorEl = document.querySelectorAll('.yellow');
-for (let i = 0; i < colorEl.length; i++) {
-    colorEl[i].style.backgroundColor = 'yellow'
-};
