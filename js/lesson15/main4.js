@@ -2,12 +2,22 @@
 
 const elementTr = document.querySelectorAll('tr');
 console.log(elementTr);
+for (let i = 0; i < elementTr.length - 1; i++) {                     
+    if (elementTr[i].innerHTML === elementTr[i + 1].innerHTML) {         // а так вообще можно?
+        elementTr[i + 1].remove(); 
+    };   
+};
 
-console.log(elementTr[0].innerHTML)
+const elNumericClone = document.querySelector('#violet').cloneNode(true); // клонируем 1-ую строку таблицы в переменную
+elNumericClone.removeAttribute('id');
+elNumericClone.setAttribute('class', 'yellow');
 
-if (elementTr[3].innerHTML === elementTr[4].innerHTML) {
-    console.log ('true')
-}
-// В таблице допущена ошибка. Строка Петрова А.И…. вставлена в таблицу дважды.( 3 и 4 строка).  
-// Исправьте эту ошибку при помощи метода   node.remove()
-// Вставьте в начале и в конце раздела  tbody  HTML код, чтобы таблица приобрела вид в соответствии с образцом на рисунке
+const table =  document.querySelector('#graphik > tbody');
+table.append(elNumericClone);                                             // вставляем узел
+// вставляем HTML    
+table.insertAdjacentHTML('afterbegin', '<tr class="yellow"><td></td><td colspan="31">График дежурств сотрудников на август 2020 года</td></tr>');
+
+const colorEl = document.querySelectorAll('.yellow');
+for (let i = 0; i < colorEl.length; i++) {
+    colorEl[i].style.backgroundColor = 'yellow'
+};
