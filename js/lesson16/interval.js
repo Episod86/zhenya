@@ -9,10 +9,10 @@ let b;
 do {
     b = +prompt('Введите конечную цифру', 0);
 } while (isNaN(b) || b < 0 || b > a);
-// printNumber(a,b);
+printNumber(a,b);
 
 
-const printNumber = (from, to) => {
+function printNumber(from, to) {
     let timerId = setInterval(() => {
         counter.innerHTML = `Отсчет пошел: ${from}`;
         if (from === to) {
