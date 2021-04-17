@@ -4,15 +4,13 @@ const counter = document.querySelector('.counter');
 let a;
 do {
     a = +prompt('Введите начало отсчета', 0);
-} while (isNaN(a) || a <= 0);
+} while (isNaN(a) && a <= 0);
 let b;
 do {
     b = +prompt('Введите конечную цифру', 0);
-} while (isNaN(b) || b < 0 || b > a);
-printNumber(a,b);
+} while (isNaN(b) && b < 0 && b > a);
 
-
-function printNumber(from, to) {
+const printNumber = (from, to) => {
     let timerId = setInterval(() => {
         counter.innerHTML = `Отсчет пошел: ${from}`;
         if (from === to) {
@@ -22,13 +20,4 @@ function printNumber(from, to) {
         from--;
     }, 1000);
 };
-
-
-
-
-
-
-
-
-
-
+printNumber(a,b);
