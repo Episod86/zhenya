@@ -1,27 +1,54 @@
 'use strict'
 
-document.body.insertAdjacentHTML('afterbegin', '<div class = "counter"></div><input type="button">');
 const counter = document.querySelector('.counter');
-const startButton = document.querySelector('input')
+const startButton = document.querySelector('.button');
+const inputNumber = document.querySelectorAll('.number-start');
+
+
+// for (let i = 0; i < inputNumber.length; i++) {
+//     console.log(Number(inputNumber[i].getAttribute('value')))
+// };
+
+// const inputFrom = () => {
+//     do {
+//         a = Number(inputNumber[0].value);
+//     } while (a <= 0);
+//     return a; 
+// };
 let a, b;
+
+
+let active;
+
+startButton.addEventListener('click', () => {
+    if (!(inputNumber[0].value)) {
+        alert ('Введите начальное значение') 
+    }
+    a = inputFrom();
+    console.log(inputNumber[0].value)
+    console.log(Number(inputNumber[0].value))
+    if (startButton.value === 'Пуск') {
+        startButton.value = 'Пауза'
+        active = true;
+        if (a == 0) {
+            a = Number(inputNumber[0].value);
+            b = Number(inputNumber[0].value);
+        }    
+    } else {
+        startButton.value = 'Пуск';
+        active = false;
+    };
+    printNumber(a, b);
+});
 
 const printNumber = (from, to) => {
     let timerId = setInterval(() => {
-        counter.innerHTML = `Отсчет пошел: ${from}`;
-        if (from === to) {
+        if (from === to || !(active)) {
             clearInterval(timerId);
-            counter.innerHTML = '<img src="bang.gif" alt="Взрыв">';
-        };
-        from--;
+        } else {
+            counter.innerHTML = `Отсчет пошел: ${from}`;
+            from--;
+            a = from;
+        }
     }, 1000);
 };
-
-do {
-    a = +prompt('Введите начало отсчета', 0);
-} while (isNaN(a) && a <= 0);
-do {
-    b = +prompt('Введите конечную цифру', 0);
-} while (isNaN(b) && b < 0 && b > a);
-
-startButton.addEventListener('click', () => printNumber(a, b));
-printNumber(a,b);
