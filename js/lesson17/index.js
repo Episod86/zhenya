@@ -2,43 +2,33 @@
 
 const counter = document.querySelector('.counter');
 const startButton = document.querySelector('.button');
-const inputNumber = document.querySelectorAll('.number-start');
+const start = document.querySelector('.start');
+const end = document.querySelector('.end');
 
 
-// for (let i = 0; i < inputNumber.length; i++) {
-//     console.log(Number(inputNumber[i].getAttribute('value')))
-// };
-
-// const inputFrom = () => {
-//     do {
-//         a = Number(inputNumber[0].value);
-//     } while (a <= 0);
-//     return a; 
-// };
-let a, b;
+let a = 0;
+let b = 0;
 
 
 let active;
 
 startButton.addEventListener('click', () => {
-    if (!(inputNumber[0].value)) {
-        alert ('Введите начальное значение') 
-    }
-    a = inputFrom();
-    console.log(inputNumber[0].value)
-    console.log(Number(inputNumber[0].value))
-    if (startButton.value === 'Пуск') {
-        startButton.value = 'Пауза'
-        active = true;
-        if (a == 0) {
-            a = Number(inputNumber[0].value);
-            b = Number(inputNumber[0].value);
-        }    
+    getNumber()
+    if (false) {
+        alert('ddddd')
     } else {
-        startButton.value = 'Пуск';
-        active = false;
-    };
-    printNumber(a, b);
+        if (startButton.value === 'Пуск') {
+            startButton.value = 'Пауза'
+            active = true;
+        } else {
+            startButton.value = 'Пуск';
+            active = false;
+        };
+        printNumber(a, b);
+
+    }
+
+
 });
 
 const printNumber = (from, to) => {
@@ -52,3 +42,13 @@ const printNumber = (from, to) => {
         }
     }, 1000);
 };
+const getNumber = () => {
+
+    if (!(start.value) || !(end.value) || a === 0 || a <= b) {
+        return false;
+    } else {
+        a = Number(start.value)
+        b = Number(end.value)
+        return true
+    }
+}
