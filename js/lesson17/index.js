@@ -2,29 +2,32 @@
 
 const counter = document.querySelector('.counter');
 const startButton = document.querySelector('.button');
-const start = document.querySelector('.start');
-const end = document.querySelector('.end');
-
+const startInput = document.querySelector('.start');
+const endInput = document.querySelector('.end');
 
 let a = 0;
 let b = 0;
 
-
 let active;
 
+
 startButton.addEventListener('click', () => {
-    getNumber()
-    if (false) {
-        alert('ddddd')
-    } else {
+
+    if (startButton.classList.contains("counter-active")) {
         if (startButton.value === 'Пуск') {
+            // startButton.classList.toggle("counter-active")
             startButton.value = 'Пауза'
             active = true;
         } else {
+            // if (from = to) {
+            startButton.classList.remove("counter-active")
+            // }
             startButton.value = 'Пуск';
             active = false;
         };
         printNumber(a, b);
+    } else {
+        getNumbers()
 
     }
 
@@ -34,6 +37,9 @@ startButton.addEventListener('click', () => {
 const printNumber = (from, to) => {
     let timerId = setInterval(() => {
         if (from === to || !(active)) {
+            if (from = to) {
+                startButton.classList.remove("counter-active")
+            }
             clearInterval(timerId);
         } else {
             counter.innerHTML = `Отсчет пошел: ${from}`;
@@ -42,13 +48,17 @@ const printNumber = (from, to) => {
         }
     }, 1000);
 };
-const getNumber = () => {
-
-    if (!(start.value) || !(end.value) || a === 0 || a <= b) {
-        return false;
+const getNumbers = () => {
+    if (!startInput.value || !endInput.value) {
+        return alert('error1')
     } else {
-        a = Number(start.value)
-        b = Number(end.value)
-        return true
+        a = Number(startInput.value)
+        b = Number(endInput.value)
+        if (a === 0 || a <= b) {
+            return alert('error2')
+        } else {
+            startButton.classList.add("counter-active")
+        }
     }
+
 }
