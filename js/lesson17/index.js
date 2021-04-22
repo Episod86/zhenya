@@ -5,40 +5,34 @@ const startButton = document.querySelector('.button');
 const startInput = document.querySelector('.start');
 const endInput = document.querySelector('.end');
 
-let a = 0;
-let b = 0;
-
-let active;
-
+let a;
+let b;
 
 startButton.addEventListener('click', () => {
-
-    if (startButton.classList.contains("counter-active")) {
+    if (startButton.classList.contains("button-active")) {
         if (startButton.value === 'Пуск') {
-            // startButton.classList.toggle("counter-active")
-            startButton.value = 'Пауза'
-            active = true;
+            startButton.value = 'Пауза';
+            counter.classList.add("counter-active");
         } else {
-            // if (from = to) {
-            startButton.classList.remove("counter-active")
-            // }
             startButton.value = 'Пуск';
-            active = false;
+            counter.classList.remove("counter-active");
         };
         printNumber(a, b);
     } else {
-        getNumbers()
-
+        const pusk = getNumbers();
+        if (pusk === true) {
+            startButton.value = 'Пауза';
+            printNumber(a, b);
+        }
     }
-
-
 });
 
 const printNumber = (from, to) => {
     let timerId = setInterval(() => {
-        if (from === to || !(active)) {
-            if (from = to) {
-                startButton.classList.remove("counter-active")
+        if (from === to || !(counter.classList.contains("counter-active"))) {
+            if (from === to) {
+                startButton.classList.remove("button-active")
+                counter.innerHTML = 'Конец!';
             }
             clearInterval(timerId);
         } else {
@@ -48,17 +42,20 @@ const printNumber = (from, to) => {
         }
     }, 1000);
 };
+
 const getNumbers = () => {
     if (!startInput.value || !endInput.value) {
-        return alert('error1')
+        return alert('Введите начальное и конечное значение');
     } else {
-        a = Number(startInput.value)
-        b = Number(endInput.value)
+        a = Number(startInput.value);
+        b = Number(endInput.value);
         if (a === 0 || a <= b) {
-            return alert('error2')
+            return alert('Проверьте введенные значения!!!');
         } else {
-            startButton.classList.add("counter-active")
-        }
-    }
+            startButton.classList.add("button-active");
+            counter.classList.add("counter-active");
+            return true;
+        };
+    };
+};
 
-}
