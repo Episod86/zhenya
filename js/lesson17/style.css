@@ -1,0 +1,23 @@
+.container {
+    /* margin: 0 auto; */
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-number {
+    display: flex;
+    padding: 20px 0;
+} 
+
+.button {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.counter {
+    font-size: 40px;
+    font-weight: 700;
+    color: brown;
+
+}
