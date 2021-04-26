@@ -1,0 +1,33 @@
+.container {
+    /* margin: 0 auto; */
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-number {
+    display: flex;
+    padding: 20px 0;
+} 
+
+.message {
+    color: red;
+    font-size: 12px;
+}
+
+.button {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.button[disabled] {
+    background-color: rgb(223, 135, 135);
+}
+
+.counter {
+    font-size: 40px;
+    font-weight: 700;
+    color: brown;
+
+}
+
