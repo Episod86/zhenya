@@ -3,10 +3,11 @@
 const counter = document.querySelector('.counter');
 const startButton = document.querySelector('.button');
 const inputNumber = document.querySelectorAll('.input-point')
-const inputMess = document.querySelectorAll('.message')
+const inputError = document.querySelectorAll('.error');
+const inputMess = document.querySelectorAll('input');
 
-let a;
-let b;
+let startNumber;
+let endNumber;
 
 const checkCorrect = (i) => {
     let n = (i === 0) ? 1 : 0;
