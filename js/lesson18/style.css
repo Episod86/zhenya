@@ -1,0 +1,42 @@
+.container {
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-number {
+    display: flex;
+    padding: 20px 0;
+} 
+
+.error {
+    color: red;
+    font-size: 12px;
+}
+
+.message {
+    position: fixed;
+    padding: 10px 20px;
+    border: 1px solid #b3c9ce;
+    border-radius: 4px;
+    color: #333;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+
+}
+
+.button {
+    width: 150px;
+    margin: 0 auto;
+}
+
+.button[disabled] {
+    background-color: rgb(223, 135, 135);
+}
+
+.counter {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
