@@ -31,16 +31,16 @@ const checkCorrect = (i, n) => {
         if (startNumber <= 0 || startNumber <= endNumber) {
             inputError[i].innerHTML = `Значение должно быть  ${textError[i].error}`;
         } else {
-            for (i = 0; i < inputNumber.length; i++) {
-                inputNumber[i].setAttribute('disabled', 'disabled');
-                inputError[i].innerHTML = '';
-            };
             startButton.removeAttribute('disabled');
         };
     };
 };
 
 const printNumber = (from, to) => {
+    for (let i = 0; i < inputNumber.length; i++) {
+        inputNumber[i].setAttribute('disabled', 'disabled');
+        inputError[i].innerHTML = '';
+    };
     let timerId = setInterval(() => {
         if (from === to || !(counter.classList.contains("counter-active"))) {
             if (from === to) {
