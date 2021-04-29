@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="form.js" defer></script>
+</head>
+
+<body>
+    <!-- <div class="form-more">
+        Написать еще
+    </div>
+    <div class="error-block">
+        Что-то пошло не так. Попробуйте написать позже.
+    </div> -->
+    <form action="" method="POST" name="info" class="form-block">
+        <label for="email">
+            Ваша почта
+        </label>
+        <input type="email" id="email" name="email" class="form-email input" accesskey="a" required
+            placeholder="example@example.com" onfocus="this.placeholder=''"
+            onblur="this.placeholder='example@example.com'" autocomplete="off">
+        <input type="text" name="type" id="type" value="adept_marketing" class="form-type input" readonly
+            style="display: none;">
+        <label for="textarea">
+            Что мы можем сделать для вас?
+        </label>
+        <textarea id="textarea" name="inform" class="form-textarea input" placeholder="Введите сообщение"
+            onfocus="this.placeholder=''" onblur="this.placeholder='Введите сообщение'"></textarea>
+        <input type="submit" name="submit" class="form-submit" value="Отправить"
+            title="Введите почту, для того что бы отправить!">
+    </form>
+</body>
+</html>
