@@ -70,6 +70,7 @@ const printNumber = (from, to) => {
 
 const showMess = () => {
     startButton.insertAdjacentHTML('afterend', `<div class = "message">УРА</div>`);
+    const el = document.querySelector('.message')
     let coords = startButton.getBoundingClientRect();
     console.log(coords)
 }
