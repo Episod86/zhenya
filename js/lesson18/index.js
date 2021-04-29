@@ -2,9 +2,8 @@
 
 const counter = document.querySelector('.counter');
 const startButton = document.querySelector('.button');
-const inputNumber = document.querySelectorAll('.input-point')
+const inputNumber = document.querySelectorAll('.input-point');
 const inputError = document.querySelectorAll('.error');
-// const inputMess = document.querySelectorAll('input');
 
 const textError = [
     {
@@ -17,19 +16,13 @@ const textError = [
     },
 ];
 
-const textMess = [
-    {
-        title: 'Запустить',
-    },
-    {
-        title: 'Остановить',
-    },
-];
+const color = ['red' , 'white'];
 
 let startNumber;
 let endNumber;
 
 const checkCorrect = (i, n) => {
+    inputError[i].innerHTML = ''
     if (!inputNumber[n].value) {
         inputError[n].innerHTML = `Введите  ${textError[i].title} значение`;
     } else {
@@ -69,20 +62,35 @@ const printNumber = (from, to) => {
 };
 
 const showMess = () => {
-    startButton.insertAdjacentHTML('afterend', `<div class = "message">УРА</div>`);
-    const el = document.querySelector('.message')
-    let coords = startButton.getBoundingClientRect();
-    console.log(coords)
+    startButton.insertAdjacentHTML('afterend', `<div class = "message"></div>`);
+    const message = document.querySelector('.message');
+    const coords = startButton.getBoundingClientRect();
+    
+    message.style.left = coords.left +"px";
+    message.style.top = coords.top - 45 + "px";
+    if (startButton.value === 'Пуск') {
+        message.innerHTML = 'Запустить счетчик';
+    } else {
+        message.innerHTML = 'Остановить счетчик';
+    }   
 }
+const clearMess = () => {
+    const message = document.querySelector('.message');
+    message.remove();
+}
+
+const activStyle = (i) => {
+    counter.style.backgroundColor = color[i];    
+}
+
+const inputMess = (i) => {
+    inputError[i].innerHTML = `Вы ввели ${inputNumber[i].value}`;
+};
 
 for (let i = 0, n = 1; i < inputNumber.length; i++, n--) {
     inputNumber[i].addEventListener('change', () => checkCorrect(i, n));
+    inputNumber[i].addEventListener('input', () => inputMess(i));
 };
-
-// for (let i = 0; i < inputMess.length; i++) {
-//     inputMess[i].addEventListener('pointerover', () => showMess(i));
-//     // inputMess[i].addEventListener('pointerout', () => clearMess(i));
-// };
 
 startButton.addEventListener('click', () => {
     if (startButton.value === 'Пуск') {
@@ -96,9 +104,7 @@ startButton.addEventListener('click', () => {
 });
 
 startButton.addEventListener('pointerover', () => showMess());
-// startButton.addEventListener('pointerout', () => clearMess());
+startButton.addEventListener('pointerout', () => clearMess());
 
-
-
-
-
+counter.addEventListener('pointerover', () => activStyle(0));
+counter.addEventListener('pointerout', () => activStyle(1));
