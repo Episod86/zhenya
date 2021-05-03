@@ -1,64 +1,85 @@
-"use strict";
-const rate = document.querySelector(".rate");
-const feedback = document.querySelector(".form-block");
-const returnBlock = document.querySelector(".return-block");
-const errorBlock = document.querySelector(".error-block");
-const returnButton = document.querySelector(".return-button");
-const writeMore = document.querySelector(".form-more");
-const inputs = document.querySelectorAll(".input");
-const form = document.querySelector(".form-block");
-const FORM_DATA = {
-  adept_marketing: (data) => ({
-    host: "XR-Adept",
-    subject: "Вопрос с XR-Adept",
-    html: `Email: ${data.email}, <br> Обращение: ${data.inform},<br>`,
-    text: `Email: ${data.email}. Обращение: ${data.inform}.`,
-    type: "xradept",
-  }),
-  adept_tariff: (data) => ({
-    host: "XR-Adept",
-    subject: "Заявка с XR-Adept",
-    html: `Имя: ${data.name},<br> Фамилия: ${data.lastname},<br> Компания: ${data.company},<br> Телефон: ${data.phone},<br> Email: ${data.email},<br>`,
-    text: `Имя: ${data.name}. Фамилия: ${data.lastname}. Компания: ${data.company}. Телефон: ${data.phone}. Email: ${data.email}.`,
-    type: "xradept",
-  }),
-};
+'use strict';
 
-form.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  const formData = new FormData(form);
-  const data = Array.from(formData.entries()).reduce(
-    (prev, [name, value]) => ({
-      ...prev,
-      [name]: value,
-    }),
-    {}
-  );
-  const mailData = FORM_DATA[data.type](data);
-  const mailDataJSON = JSON.stringify(mailData);
+const form = document.querySelector('#form');
+const email = document.querySelector('#email');
+const password = document.querySelector('#password');
 
-  try {
-    await fetch("https://xr-adept.ru/api/send", {
-      method: "POST",
-      headers: { "Content-Type": "application/json;charset=utf-8" },
-      body: mailDataJSON,
-    });
-    for (let input of inputs) {
-      input.value = null;
-    }
-    rate && (rate.style.display = "none");
-    writeMore && (writeMore.style.display = "none");
-    feedback && (feedback.style.display = "none");
-    returnBlock && (returnBlock.style.display = "block");
-    errorBlock && (errorBlock.style.display = "none");
-  } catch (error) {
-    errorBlock && (errorBlock.style.display = "block");
-  }
+const getResponse = async (url) => {
+  const response = await fetch(url) 
+  const data = await response.json()
 
-  returnButton.addEventListener("click", () => {
-    feedback.style.display = "block";
-    returnBlock.style.display = "none";
-    writeMore.style.display = "block";
-    errorBlock && (errorBlock.style.display = "none");
-  });
-});
+  console.log(data)
+
+}
+
+getResponse('https://jsonplaceholder.typicode.com/users')
+
+
+//  
+
+// const submitForm = async (e) => {
+//   e.preventDefault();
+
+  // let formData = new FormData(form);
+  //   let formDataObj = Array.from(formData.entries()).reduce(
+  //     (prev, [name, value]) => ({
+  //       ...prev,
+  //       [name]: value,
+  //     }),
+  //     {}
+  //   );
+  //   let formDataJSON = JSON.stringify(formDataObj);
+//   const url = 'https://jsonplaceholder.typicode.com/users'
+//   const response = await fetch(url);
+//   console.log(response)
+
+// }
+
+// const submitForm = async (e) => {
+//    e.preventDefault();
+
+
+
+    // try {
+    //   let formData = new FormData(form);
+    //   let formDataObj = Array.from(formData.entries()).reduce(
+    //     (prev, [name, value]) => ({
+    //       ...prev,
+    //       [name]: value,
+    //     }),
+    //     {}
+    //   );
+    //   let formDataJSON = JSON.stringify(formDataObj);
+
+    //   let response = await fetch('https://reqres.in/api/', {
+    //     method: 'POST',
+    //     body: formDataJSON
+    //   });
+
+    //     let result = await response.json();
+    //     alert(`Данные, переданные на сервер: ${result.data}`);
+    //     form.hidden = true;
+    //     document.body.insertAdjacentHTML('afterbegin','<div class="success">Данные загрузились!</div>');
+    // } catch {
+    //   email.insertAdjacentHTML('afterend', '<div class="error">ОШИБКА</div>')
+    //   pass.insertAdjacentHTML('afterend', '<div class="error">ОШИБКА</div>')
+    // };
+// };
+
+
+// const showMess = () => {
+//   startButton.insertAdjacentHTML('afterend', `<div class = "message"></div>`);
+//   const message = document.querySelector('.message');
+//   const coords = startButton.getBoundingClientRect();
+
+//   message.style.left = coords.left +"px";
+//   message.style.top = coords.top - 45 + "px";
+//   if (startButton.value === 'Пуск') {
+//       message.innerHTML = 'Запустить счетчик';
+//   } else {
+//       message.innerHTML = 'Остановить счетчик';
+//   }   
+// }
+
+
+// form.addEventListener('submit', submitForm);
